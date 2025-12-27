@@ -36,7 +36,7 @@ class BitsBopsGame(Game):
         if self.perfects:
             templates.extend([
                 GameObjectiveTemplate(
-                    label="Get Perfect in LEVEL",
+                    label="Get Perfect in SONG",
                     data={
                         "SONG": (self.songs, 1),
                     },
