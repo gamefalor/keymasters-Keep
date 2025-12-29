@@ -1,4 +1,4 @@
-lmfao sure github telling me to do this
+Feel Free to Ping me about ANYTHING to do with these
 
 Arcaea (AND + IOS)
 remember to use the Arcaea.txt if you wish to not have to test gen every time because it gives the stuff you have to copy paste
