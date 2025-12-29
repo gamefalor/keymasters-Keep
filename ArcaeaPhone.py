@@ -52,7 +52,7 @@ class ArcaeaGame(Game):
             GameObjectiveTemplate(
                 label="Clear SONG with PARTNER",
                 data={
-                    "SONG": (self.songs, 1),
+                    "SONG": (self.songs_without_last_variants, 1),
                     "PARTNER": (self.partners, 1),
                 },
                 is_time_consuming=False,
@@ -1002,7 +1002,16 @@ class ArcaeaGame(Game):
             songs.extend(self.songs_pack_Dynamix)
 
         return sorted(songs)
+    
+    def songs_without_last_variants(self) -> List[str]:
+        songs_without_last_variants: List[str] = self.songs()[:]
 
+        if "Last | Moment" in songs_without_last_variants:
+            songs_without_last_variants.remove("Last | Moment")
+        if "Last | Eternity" in songs_without_last_variants:
+            songs_without_last_variants.remove("Last | Eternity")
+
+        return songs_without_last_variants
 
 # Archipelago Options
 class ArcaeaPacksOwned(OptionSet):
