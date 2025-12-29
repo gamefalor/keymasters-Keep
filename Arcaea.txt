@@ -43,7 +43,7 @@ All Individual Songs
     'PRAGMATISM -RESSURECTION-', 'Vicious [ANTi] heroism'
 
 
-Parners
+Partners
 'Tairitsu', 'Kou', 'Sapphire', 'Lethe', 'Awakened Lethe', 'Axium Tairitsu', 'Grievous Lady Tairitsu', 'Stella', 'Hikari & Fisica', 'Illith', 'Awakened Illith', 'Eto', 'Awakened Eto', 'Luna', 'Awakaned Luna', 'Shirabe', 'Awakened Shirabe', 'Zero Hikari', 'Fracture Hikari', 'Summer Hikari', 'Summer Tairitsu', 'Tairitsu & Trin', 'Ayu', 'Awakened Ayu', 'Winter Eto & Luna', 'Yume', 'Hikari & Seine', 'Saya', 'Awakened Saya', 'Grievous Lady Tairitsu & Chuni Penguin', 'Chuni Penguin', 'Haruna Mishima', 'Nono Shibusawa', 'MTA-XXX Pandora Nemesis', 'MDA-21 Regulus', 'Kanae', 'Awakened Kanae', 'Fantasia Hikari', 'Sonata Tairitsu', 'Sia', 'DORO*C', 'Tempest Tairitsu', 'E/S Primera Brillante', 'Summer Illith', 'Etude Saya', 'Alice & Tenniel', 'Luna & Mia', 'Areus', 'Seele Haze', 'Isabelle Yagrush', 'Mir', 'Lagrange', 'Nami', 'Saya & Elizabeth', 'Lily', 'Midsummer Kanae', 'Shirahime', 'Minuet Alice & Tenniel', 'Elegy Tairitsu', 'Marija', 'Vita', 'Linka', 'Fatalis Hikari', 'Reunion Hikari & Tairitsu', 'Saki', 'Setsuna', 'Amane', 'Winter Kou', 'Apophenia Lethe', 'Aria Lagrange', 'UNiVERSE Shama', 'Shikoku', 'Mika Yurisaki', 'Mithra Tercera', 'Toa Kozukata', 'Twilight Nami', 'Illith & Ivy', 'Hikari & Vanessa', 'Maya', 'Ascendant 8th Seeker Insight', 'Luin', 'Awakened Luin', 'Cadenza Vita', 'Ai-chan', 'Luna & Ilot', 'Eto & Hoppe', 'Ascendant 8th Seeker Compassion', 'Chinatsu', 'Tsumugi', 'Nai', 'MIR-203 Selene Sheryl', 'Salt', 'Acid', 'Hikari & El Clear', 'Twilight Nami & Sui', 'Tairitsu & El Fail', 'Nonoka', 'Wanderer Vita', 'Breakthrough Hikary & Tairitsu', 'Debut Hikari & Tairitsu'
 
   Easy non-mirror Partners
@@ -74,4 +74,5 @@ Parners
     'Tairitsu & Trin', 'Marija', 
 
   Okay these do literally nothing different from just selecting tairitsu in regards to challenge
+
     'Tairitsu', 'Kou', 'Sapphire', 'Axium Tairitsu', 'Stella', 'Eto', 'Awakened Eto', 'Awakaned Luna', 'Shirabe', 'Awakened Shirabe', 'Ayu', 'Awakened Ayu', 'Yume', 'Awakened Yume', 'Hikari & Seine', 'Awakened Saya', 'Grievous Lady Tairitsu & Chuni Penguin', 'Chuni Penguin', 'Nono Shibusawa', 'Awakened Kanae', 'Fantasia Hikari', 'Sonata Tairitsu', 'Etude Saya', 'Luna & Mia', 'Lagrange', 'Nami', 'Saya & Elizabeth', 'Lily', 'Kanae', 'Shirahime', 'Minuet Alice & Tenniel', 'Elegy Tairitsu', 'Reunion Hikari & Tairitsu', 'Saki', 'Amane', 'Winter Kou', 'Aria Lagrange', 'UNiVERSE Shama', 'UNiVERSE milk', 'Mika Yurisaki', 'Illith & Ivy', 'Maya', 'Cadenza Vita', 'Ai-chan', 'Luna & Ilot', 'Eto & Hoppe', 'Chinatsu', 'Tsumugi', 'Nai', 'Salt', 'Hikari & El Clear', 'Twilight Nami & Sui', 'Nonoka', 'Wanderer Vita', 'Breakthrough Hikary & Tairitsu', 'Debut Hikari & Tairitsu'
