@@ -60,10 +60,10 @@ Partners
     'Lethe', 'Summer Tairitsu', 'Alice & Tenniel'
 
   Hard non-mirror Partners
-    'Grievous Lady Tairitsu',  'Illith',  'Awakened Illith', 'MDA-21 Regulus', 'E/S Primera Brillante', 'Summer Illith', 'Tempest Tairitsu', 'Areus', 'Seele Haze', 'Isabelle Yagrush', 'Fatalis Hikari', 'Setsuna', 'Shikoku', 'Mithra Tercera', 'Hikari & Vanessa', 'Luin', 'Awakened Luin', 'Ascendant 8th Seeker Compassion', 'MIR-203 Selene Sheryl', 'Acid', 'Tairitsu & El Fail', 'Ascendant 8th Seeker Insight' 
+    'Grievous Lady Tairitsu',  'Illith',  'Awakened Illith', 'MDA-21 Regulus', 'E/S Primera Brillante', 'Summer Illith', 'Tempest Tairitsu', 'Areus', 'Seele Haze', 'Isabelle Yagrush', 'Fatalis Hikari', 'Setsuna', 'Shikoku', 'Mithra Tercera', 'Hikari & Vanessa', 'Luin', 'Awakened Luin', 'Ascendant 8th Seeker Compassion', 'MIR-203 Selene Sheryl', 'Acid', 'Tairitsu & El Fail', 'Ascendant 8th Seeker Insight', 'VIIM'
 
   Hard Mirror Partners
-    'Vita', 'Apophenia Lethe', 
+    'Vita', 'Apophenia Lethe'
 
   The partners so hard they deserve a seperate list
     'Zero Hikari', 'Toa Kozukata', 'MTA-XXX Pandora Nemesis'
@@ -79,3 +79,4 @@ Partners
 
   Okay these do literally nothing different from just selecting tairitsu in regards to challenge
     'Tairitsu', 'Kou', 'Sapphire', 'Axium Tairitsu', 'Stella', 'Eto', 'Awakened Eto', 'Awakaned Luna', 'Shirabe', 'Awakened Shirabe', 'Ayu', 'Awakened Ayu', 'Yume', 'Awakened Yume', 'Hikari & Seine', 'Awakened Saya', 'Grievous Lady Tairitsu & Chuni Penguin', 'Chuni Penguin', 'Nono Shibusawa', 'Awakened Kanae', 'Fantasia Hikari', 'Sonata Tairitsu', 'Etude Saya', 'Luna & Mia', 'Lagrange', 'Nami', 'Saya & Elizabeth', 'Lily', 'Kanae', 'Shirahime', 'Minuet Alice & Tenniel', 'Elegy Tairitsu', 'Reunion Hikari & Tairitsu', 'Saki', 'Amane', 'Winter Kou', 'Aria Lagrange', 'UNiVERSE Shama', 'UNiVERSE milk', 'Mika Yurisaki', 'Illith & Ivy', 'Maya', 'Cadenza Vita', 'Ai-chan', 'Luna & Ilot', 'Eto & Hoppe', 'Chinatsu', 'Tsumugi', 'Nai', 'Salt', 'Hikari & El Clear', 'Twilight Nami & Sui', 'Nonoka', 'Wanderer Vita', 'Breakthrough Hikary & Tairitsu', 'Debut Hikari & Tairitsu'
+
