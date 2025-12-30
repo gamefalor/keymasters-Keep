@@ -8,7 +8,5 @@ use of this is done so that the default yaml CAN be completed by everyone
 
 
 Bits & Bops (PC)
-latest update: 27-12-25
-- just made the thing
-to do:
-- infinite games
+latest update: 30-12-25
+- added infinite games and 7 new options to support them
