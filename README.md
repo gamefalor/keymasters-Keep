@@ -1,8 +1,8 @@
 Feel Free to Ping me about ANYTHING to do with these
 
 Arcaea (AND + IOS)
-latest update: 31-12-25
-- added Subsphere in Eclosion and Yuno to Arcaea.txt
+latest update: 1-1-26
+- added Innocence as a default option to the individual song selection
 
 temporarily removed to see if i can get the codex to update, if you want the implementation ping me about it
 
