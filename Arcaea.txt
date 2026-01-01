@@ -1,0 +1,83 @@
+This TXT is to make sure that the default yaml is completable by everyone for this
+but also to make it so that you can Copy paste in all the songs and packs that are possible
+the Valid Packs require THIS way of writing it down
+copy paste this into the correct square brackets
+these have been grouped for your convenience
+
+
+Valid Packs:
+	'Arcaea', 'Liminal Eclipse', 'Lucent Historia', 'Absolute Nihil', 'Lasting Eden', 'Lasting Eden Chapter 2', 'Shifting Veil', 'Silent Awnser', 'Final Verdict', 'Black Fate', 'Adverse Prelude', 'Luminous Sky', 'Vicious Labyrinth', 'Eternal Core', 'Extant Anima', 'Chapter Experientia', 'Esoteric Order', 'Pale Tapestry', 'Light Of Salvation', 'Divided Heart', 'Ephemeral Page', 'The Journey Onwards', 'Sunset Radiance', 'Absolute Reason', 'Binary Enfold', 'Shared Time', 'Ambivalent Vision', 'Crimson Solace', 'Arcaea Next Stage', 'DJMAX', 'DJMAX Collab 2', 'UNDERTALE', 'Rotaeno', 'Cytus II', 'Cytus II Collab 2', 'Muse Dash', 'WACCA', 'WACCA Collab 2', 'maimai', 'maimai Collab 2', 'maimai Collab 3', 'O.N.G.E.K.I.', 'O.N.G.E.K.I. Collab 2', 'O.N.G.E.K.I. Collab 3', 'CHUNITHM', 'CHUNITHM Collab 2', 'CHUNITHM Collab 3', 'CHUNITHM Collab 4', 'Groove Coaster', 'Groove Coaster Collab 2', 'Tone Sphere', 'Lanota', 'Lanota Collab 2', 'Dynamix'
+
+  Free: 
+    'Arcaea'
+
+  Main Story CH.2
+    'Liminal Eclipse', 'Lucent Historia', 'Absolute Nihil', 'Lasting Eden', 'Lasting Eden Chapter 2', 'Shifting Veil'
+
+  Main Story CH.1
+    'Silent Awnser', 'Final Verdict', 'Black Fate', 'Adverse Prelude', 'Luminous Sky', 'Vicious Labyrinth', 'Eternal Core'
+
+  Side Story
+    'Extant Anima', 'Chapter Experientia', 'Esoteric Order', 'Pale Tapestry', 'Light Of Salvation', 'Divided Heart', 'Ephemeral Page', 'The Journey Onwards', 'Sunset Radiance', 'Absolute Reason', 'Binary Enfold', 'Shared Time', 'Ambivalent Vision', 'Crimson Solace'
+
+  Collab
+    'Arcaea Next Stage', 'DJMAX', 'DJMAX Collab 2', 'UNDERTALE', 'Rotaeno', 'Cytus II', 'Cytus II Collab 2', 'Muse Dash', 'WACCA', 'WACCA Collab 2', 'maimai', 'maimai Collab 2', 'maimai Collab 3', 'O.N.G.E.K.I.', 'O.N.G.E.K.I. Collab 2', 'O.N.G.E.K.I. Collab 3', 'CHUNITHM', 'CHUNITHM Collab 2', 'CHUNITHM Collab 3', 'CHUNITHM Collab 4', 'Groove Coaster', 'Groove Coaster Collab 2', 'Tone Sphere', 'Lanota', 'Lanota Collab 2', 'Dynamix'
+
+
+All Individual Songs
+    'Dot to Dot feat. shully', 'Innocence', 'INTERNET OVERDOSE', 'Miles', 'Call My Name feat. Yukacco', 'Crimson Quartz', 'dropdead', 'Gensou no Satellite', 'IONOSTREAM', 'Shinchoku Doudesuka?', 'Surrender', 'Tic! Tac! Toe!', 'Astral Tale', 'Auxesia', 'Avant Raze', 'Be There', 'Can I Friend You on Bassbook? Lol', 'carmine:scythe', 'cocoro*cosmetic', 'CROSS✝SOUL', 'DataErr0r', 'Dies irae', 'Distrorted Fate', "Don't Die", 'Empire of Winter', 'Eternity Break', 'Evening in Scarlet', 'Feels to Right feat. Renko', 'Floating World', 'Galactic Love', 'Head BONK ache', 'Impure Bird', "la'qryma of the Wasteland", 'lastendconductor', 'Libertas', 'MAHOROBA', 'Paranoid Arc', 'Phantasia', 'PICO-Pico Translation!', 'Rain of Conflict in a Radiant Abyss', 'STARGATE EXTREME', 'Teriqma', 'Third Sun', 'Twilight Concerto', 'Yosakura Fubuki', 'Your voice so... feat. Such', 'Altale', 'amygdata', 'B.B.K.K.B.K.K.', 'BADTEK', 'BATTLE NO.1', 'Beautiful Dreamer', 'Dreadnought', 'Einherjar Joker', 'Fallensquare', 'Filament', 'Galaxy Friends', 'goldenslaughterer', 'Heavenly caress', 'HYPER VISION', 'init()', 'LIVHT MY WΔY', 'Lost in the Abyss', 'Luna Rossa', 'Macrocosmic Modulation', 'MEGALOVANIA (Camellia Remix)', 'Mirzam', 'Modelista', 'New York Back Raise', 'SACRIFICE feat. ayame', 'Scarlet Cage', 'shrink', 'Summer Fireworks of Love', 'The Survivor (Game Edit)', 'THE ULTIMACY', 'To the Furthest Dream', 'Xeraphinite', 'Xterfusion', 'μ (mu, the one with the u)', 'Désive', 'Alexandrite', "Angel's Boundary", 'AttraqtiA', 'Aurgelmir', 'Back to Basics', 'Capella', 'Chromafill', 'Crimson Throne', 'Dull Blade', 'Free Myself', 'GIMME DA BLOOD', 'Grandspell', 'Hiiro Gekka, Kyoushou no Zetsu (nayuta 2017 ver.)', 'INTERNET YAMERO', 'IZANA', 'Kanbu de Tomatte Sugu Tokeru', 'Kissing Lucifer', 'Malicious Mischance', 'Macif Jeer', 'Masquerade Legion', 'Metallic Punisher', 'MIRINAE', 'NEO WINGS', 'Placebo ♥ Battler', 'PUPA', 'Qovat', 'Redolent Shape', 'Sheriruth (Laur Remix)', 'Spirit of the Dauntless', 'To the Milky Way', 'Ultradiaxon-N3', 'Wish Upon a Snow', 'Xanatos', 'γuarδina', 'BUCHiGiRE Berserker', 'KYOREN ROMANCE', 'NULL APOPHENIA', 'PRIMITIVE LIGHTS', 'REKKA RESONANCE', 'SAIKYO STRONGER', '1f√', 'Blue comet', 'enchanted love', 'Gekka (Short Version)', 'Give Me a Nightmare', 'Vivid Theory', 'CROSS✝OVER', 'ENERGY SYNERGY MATRIX', 'Faint Light (Arcaea Edit)', 'False Embellishment', 'Glow', 'Lapis', 'Life is PIANO', 'Purple Verse', 'TurboCharger', 'Black Lotus', 'Vandalism', 'Bamboo', 'G e n g a o z o', 'HIVEMIND', 'Tsuki ni Murakumo, Hana ni Kaze', 'Alone & Lorn', 'Dynitikós', 'FANTA5Y', 'felys final remix', 'On And On!! feat. Jenga', 'GIMMICK', 'Lawless Point', 'Lost Emotion feat. nomico', 'MANTIS (Arcaea Ultra-Bloodrush VIP)', 'Amekagura', 'Kanjou no Matenrou ~Arr.Demetori', 'RGB', 'Astra walkthrough', 'Hybris (The one who shattered)', "Let's Rock (Arcaea mix)", 'Ultimate Taste', 'World Fragments III(radio edit)', 'Aleph-0', 'Chronicle', 'HELLOHELL', 'Black Mirror On the Wall', 'disintegration', 'epitaxy', 'FURETE-MITAI', 'Prayer', 'MORNINGLOOM', 'astral.exe', 'Leave All Behind', 'Someday', '〇、(O,)', 'Awaken In Ruins', 'Distortion Human', 'Hailstone', 'Old School Salvage', "Won't Back Down", 'τ (tau)', 'Lethal Voltage', 'TRPNO', 'Wake in Hour', 'ROST PAGE GENE'
+'taboo tears you up 2017', 'Paradox Palette', 'mod', 'Particle', 'undefined', 'Xxium and Purple haze', '~_+', 'overdead.', 'PRAGMATISM -RESSURECTION-', 'Vicious [ANTi] heroism'
+
+  Memory Archive
+    'Dot to Dot feat. shully', 'Innocence', 'INTERNET OVERDOSE', 'Miles', 'Call My Name feat. Yukacco', 'Crimson Quartz', 'dropdead', 'Gensou no Satellite', 'IONOSTREAM', 'Shinchoku Doudesuka?', 'Surrender', 'Tic! Tac! Toe!', 'Astral Tale', 'Auxesia', 'Avant Raze', 'Be There', 'Can I Friend You on Bassbook? Lol', 'carmine:scythe', 'cocoro*cosmetic', 'CROSS✝SOUL', 'DataErr0r', 'Dies irae', 'Distorted Fate', "Don't Die", 'Empire of Winter', 'Eternity Break', 'Evening in Scarlet', 'Feels So Right feat. Renko', 'Floating World', 'Galactic Love', 'Head BONK ache', 'Impure Bird', "la'qryma of the Wasteland", 'lastendconductor', 'Libertas', 'MAHOROBA', 'Paranoid Arc', 'Phantasia', 'PICO-Pico Translation!', 'Rain of Conflict in a Radiant Abyss', 'STARGATE EXTREME', 'Teriqma', 'Third Sun', 'Twilight Concerto', 'Yosakura Fubuki', 'Your voice so... feat. Such', 'Altale', 'amygdata', 'B.B.K.K.B.K.K.', 'BADTEK', 'BATTLE NO.1', 'Beautiful Dreamer', 'Dreadnought', 'Einherjar Joker', 'Fallensquare', 'Filament', 'Galaxy Friends', 'goldenslaughterer', 'Heavenly caress', 'HYPER VISION', 'init()', 'LIVHT MY WΔY', 'Lost in the Abyss', 'Luna Rossa', 'Macrocosmic Modulation', 'MEGALOVANIA (Camellia Remix)', 'Mirzam', 'Modelista', 'New York Back Raise', 'SACRIFICE feat. ayame', 'Scarlet Cage', 'shrink', 'Summer Fireworks of Love', 'The Survivor (Game Edit)', 'THE ULTIMACY', 'To the Furthest Dream', 'Xeraphinite', 'Xterfusion', 'μ (mu, the one with the u)', 'Désive', 'Alexandrite', "Angel's Boundary", 'AttraqtiA', 'Aurgelmir', 'Back to Basics', 'Capella', 'Chromafill', 'Crimson Throne', 'Dull Blade', 'Free Myself', 'GIMME DA BLOOD', 'Grandspell', 'Hiiro Gekka, Kyoushou no Zetsu (nayuta 2017 ver.)', 'INTERNET YAMERO', 'IZANA', 'Kanbu de Tomatte Sugu Tokeru', 'Kissing Lucifer', 'Malicious Mischance', 'Manic Jeer', 'Masquerade Legion', 'Metallic Punisher', 'MIRINAE', 'NEO WINGS', 'Placebo ♥ Battler', 'PUPA', 'Qovat', 'Redolent Shape', 'Sheriruth (Laur Remix)', 'Spirit of the Dauntless', 'To the Milky Way', 'Ultradiaxon-N3', 'Wish Upon a Snow', 'Xanatos', 'γuarδina', 'BUCHiGiRE Berserker', 'KYOREN ROMANCE', 'NULL APOPHENIA', 'PRIMITIVE LIGHTS', 'REKKA RESONANCE', 'SAIKYO STRONGER', 'overdead.', 'Subsphere in Eclosion'
+
+  Extend Archive 1
+    '1f√', 'Blue comet', 'enchanted love', 'Gekka (Short Version)', 'Give Me a Nightmare', 'Vivid Theory', 'CROSS✝OVER', 'ENERGY SYNERGY MATRIX', 'Faint Light (Arcaea Edit)', 'False Embellishment', 'Glow', 'Lapis', 'Life is PIANO', 'Purple Verse', 'TurboCharger', 'Black Lotus', 'Vandalism', 'Bamboo', 'G e n g a o z o', 'HIVEMIND'
+
+  Extend Archive 2
+    'Tsuki ni Murakumo, Hana ni Kaze', 'Alone & Lorn', 'Dynitikós', 'FANTA5Y', 'felys final remix', 'On And On!! feat. Jenga', 'GIMMICK', 'Lawless Point', 'Lost Emotion feat. nomico', 'MANTIS (Arcaea Ultra-Bloodrush VIP)', 'Amekagura', 'Kanjou no Matenrou ~Arr.Demetori', 'RGB', 'Astra walkthrough', 'Hybris (The one who shattered)', "Let's Rock (Arcaea mix)", 'Ultimate Taste', 'World Fragments III(radio edit)', 'Aleph-0', 'Chronicle'
+
+  Extend Archive 3
+    'HELLOHELL', 'Black Mirror On the Wall', 'disintegration', 'epitaxy', 'FURETE-MITAI', 'Prayer', 'MORNINGLOOM', 'astral.exe', 'Leave All Behind', 'Someday', '〇、(O,)', 'Awaken In Ruins', 'Distortion Human', 'Hailstone', 'Old School Salvage', "Won't Back Down", 'τ (tau)', 'Lethal Voltage', 'TRPNO', 'Wake in Hour', 'ROST PAGE GENE'
+
+  Extend Archive 4
+    'taboo tears you up 2017', 'Paradox Palette', 'mod', 'Particle', 'undefined', 'Xxium and Purple haze', '~_+'
+
+  Multipack BYDS
+    'PRAGMATISM -RESSURECTION-', 'Vicious [ANTi] heroism'
+
+
+Partners
+'Tairitsu', 'Kou', 'Sapphire', 'Lethe', 'Awakened Lethe', 'Axium Tairitsu', 'Grievous Lady Tairitsu', 'Stella', 'Hikari & Fisica', 'Illith', 'Awakened Illith', 'Eto', 'Awakened Eto', 'Luna', 'Awakaned Luna', 'Shirabe', 'Awakened Shirabe', 'Zero Hikari', 'Fracture Hikari', 'Summer Hikari', 'Summer Tairitsu', 'Tairitsu & Trin', 'Ayu', 'Awakened Ayu', 'Winter Eto & Luna', 'Yume', 'Hikari & Seine', 'Saya', 'Awakened Saya', 'Grievous Lady Tairitsu & Chuni Penguin', 'Chuni Penguin', 'Haruna Mishima', 'Nono Shibusawa', 'MTA-XXX Pandora Nemesis', 'MDA-21 Regulus', 'Kanae', 'Awakened Kanae', 'Fantasia Hikari', 'Sonata Tairitsu', 'Sia', 'DORO*C', 'Tempest Tairitsu', 'E/S Primera Brillante', 'Summer Illith', 'Etude Saya', 'Alice & Tenniel', 'Luna & Mia', 'Areus', 'Seele Haze', 'Isabelle Yagrush', 'Mir', 'Lagrange', 'Nami', 'Saya & Elizabeth', 'Lily', 'Midsummer Kanae', 'Shirahime', 'Minuet Alice & Tenniel', 'Elegy Tairitsu', 'Marija', 'Vita', 'Linka', 'Fatalis Hikari', 'Reunion Hikari & Tairitsu', 'Saki', 'Setsuna', 'Amane', 'Winter Kou', 'Apophenia Lethe', 'Aria Lagrange', 'UNiVERSE Shama', 'Shikoku', 'Mika Yurisaki', 'Mithra Tercera', 'Toa Kozukata', 'Twilight Nami', 'Illith & Ivy', 'Hikari & Vanessa', 'Maya', 'Ascendant 8th Seeker Insight', 'Luin', 'Awakened Luin', 'Cadenza Vita', 'Ai-chan', 'Luna & Ilot', 'Eto & Hoppe', 'Ascendant 8th Seeker Compassion', 'Chinatsu', 'Tsumugi', 'Nai', 'MIR-203 Selene Sheryl', 'Salt', 'Acid', 'Hikari & El Clear', 'Twilight Nami & Sui', 'Tairitsu & El Fail', 'Nonoka', 'Wanderer Vita', 'Breakthrough Hikary & Tairitsu', 'Debut Hikari & Tairitsu'
+
+  Easy non-mirror Partners
+    'Hikari', 'Hikari & Fisica', 'Winter Eto & Luna', 'Linka', 'Twilight Nami'
+
+  Easy Mirror Partners
+    'Summer Hikari'
+
+  Normal Mirror
+    'Lethe', 'Summer Tairitsu', 'Alice & Tenniel'
+
+  Hard non-mirror Partners
+    'Grievous Lady Tairitsu',  'Illith',  'Awakened Illith', 'MDA-21 Regulus', 'E/S Primera Brillante', 'Summer Illith', 'Tempest Tairitsu', 'Areus', 'Seele Haze', 'Isabelle Yagrush', 'Fatalis Hikari', 'Setsuna', 'Shikoku', 'Mithra Tercera', 'Hikari & Vanessa', 'Luin', 'Awakened Luin', 'Ascendant 8th Seeker Compassion', 'MIR-203 Selene Sheryl', 'Acid', 'Tairitsu & El Fail', 'Ascendant 8th Seeker Insight', 'VIIM'
+
+  Hard Mirror Partners
+    'Vita', 'Apophenia Lethe'
+
+  The partners so hard they deserve a seperate list
+    'Zero Hikari', 'Toa Kozukata', 'MTA-XXX Pandora Nemesis'
+
+  Ambigious Difficulty
+    'Fracture Hikari', 'Midsummer Kanae', 'DORO*C', 'Awakened DORO*C'
+
+  Other that still gives a difference
+    'Sia', 'Awakened Lethe', 'Luna', 'Saya', 'Haruna Mishima', 'Mir', 'Yuno'
+
+  Might give a slight challenge difference if you roll the right song
+    'Tairitsu & Trin', 'Marija', 
+
+  Okay these do literally nothing different from just selecting tairitsu in regards to challenge
+    'Tairitsu', 'Kou', 'Sapphire', 'Axium Tairitsu', 'Stella', 'Eto', 'Awakened Eto', 'Awakaned Luna', 'Shirabe', 'Awakened Shirabe', 'Ayu', 'Awakened Ayu', 'Yume', 'Awakened Yume', 'Hikari & Seine', 'Awakened Saya', 'Grievous Lady Tairitsu & Chuni Penguin', 'Chuni Penguin', 'Nono Shibusawa', 'Awakened Kanae', 'Fantasia Hikari', 'Sonata Tairitsu', 'Etude Saya', 'Luna & Mia', 'Lagrange', 'Nami', 'Saya & Elizabeth', 'Lily', 'Kanae', 'Shirahime', 'Minuet Alice & Tenniel', 'Elegy Tairitsu', 'Reunion Hikari & Tairitsu', 'Saki', 'Amane', 'Winter Kou', 'Aria Lagrange', 'UNiVERSE Shama', 'UNiVERSE milk', 'Mika Yurisaki', 'Illith & Ivy', 'Maya', 'Cadenza Vita', 'Ai-chan', 'Luna & Ilot', 'Eto & Hoppe', 'Chinatsu', 'Tsumugi', 'Nai', 'Salt', 'Hikari & El Clear', 'Twilight Nami & Sui', 'Nonoka', 'Wanderer Vita', 'Breakthrough Hikary & Tairitsu', 'Debut Hikari & Tairitsu'
+
+
