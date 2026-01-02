@@ -3,6 +3,7 @@ Feel Free to Ping me about ANYTHING to do with these
 Arcaea (AND + IOS)
 latest update: 2-1-26
 - Removed all unicode from both arcaea files in an effort to make the codex work
+- realised i forgot Paranoid Arc
 
 temporarily removed to see if i can get the codex to update, if you want the implementation ping me about it
 
