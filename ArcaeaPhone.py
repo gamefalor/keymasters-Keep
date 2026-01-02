@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 import functools
 from typing import List, Dict, Set
 from dataclasses import dataclass
@@ -332,7 +332,7 @@ class ArcaeaGame(Game):
             "Dialnote",
             "Grimheart",
             "Senkyou",
-            "Anökumene",
+            "An�kumene",
             "Blaster",
             "Cybernecia Catharsis",
             "Dancin' on a Cat's Paw",
@@ -353,7 +353,7 @@ class ArcaeaGame(Game):
             "Sakura Fubuki",
             "Syro",
             "The Formula",
-            "VectoЯ",
+            "VectoR",
             "Monochrome Princess",
             "Nhelv",
             "SUPERNOVA",
@@ -527,7 +527,7 @@ class ArcaeaGame(Game):
             "Paper Witch",
             "Crystal Gravity",
             "Far Away Light",
-            "Löschen",
+            "L�schen",
             "Seclusion",
             "AegleSeeker",
         ]
@@ -536,7 +536,7 @@ class ArcaeaGame(Game):
     def songs_pack_Pale_Tapestry(self) -> List[str]:
         return [
             "Coastal Highway",
-            "ΟΔΥΣΣΕΙΑ (ODYSSEIA)",
+            "ODYSSEIA",
             "Overwhelm",
         ]
 
@@ -554,7 +554,7 @@ class ArcaeaGame(Game):
             "First Snow",
             "Blocked Library",
             "Blue Rose",
-            "nέo κósmo (neo kosmo)",
+            "n�o k�smo",
             "Lightning Screw",
         ]
 
@@ -562,7 +562,7 @@ class ArcaeaGame(Game):
     def songs_pack_Ephemeral_Page(self) -> List[str]:
         return [
             "Eccentric Tale",
-            "Alice à la mode",
+            "Alice � la mode",
             "Alice's Suitcase",
             "Jump",
             "Felis",
@@ -642,10 +642,10 @@ class ArcaeaGame(Game):
     def songs_pack_Arcaea_Next_Stage(self) -> List[str]:
         return [
             "INFINITE DIMENSION",
-            "INCARNATOR₀₀",
+            "INCARNATOR",
             "MARENYX",
             "Zephyrlasting",
-            "ΛZΛLEΛ (AZALEA)",
+            "AZALEA",
             "CODE : Oblivion",
         ]
 
@@ -686,8 +686,8 @@ class ArcaeaGame(Game):
             "Waltz for Lorelei",
             "Inverted World",
             "MVURBD",
-            "Vulcānus",
-        ]
+            "Vulcanus",
+                    ]
 
     @functools.cached_property
     def songs_pack_Cytus_II(self) -> List[str]:
@@ -702,10 +702,10 @@ class ArcaeaGame(Game):
     @functools.cached_property
     def songs_pack_Cytus_II_Collab_2(self) -> List[str]:
         return [
-            "syūten",
+            "syuten",
             "DRG",
             "99 Glooms",
-            "͟͝͞Ⅱ́̕ (Cytus II 2 10+, idunno if this one shows up)",
+            "Cytus II 2 10+ with the messed up name",
             "Magnolia",
         ]
 
@@ -732,7 +732,7 @@ class ArcaeaGame(Game):
     def songs_pack_WACCA_Collab_2(self) -> List[str]:
         return [
             "Stratoliner",
-            "Ouvertüre",
+            "Ouvert�re",
             "eden",
             "XTREME",
             "Meta-Mysteria",
@@ -771,7 +771,7 @@ class ArcaeaGame(Game):
             "Lazy Addiction",
             "Dazzle hop",
             "Viyella's Tears",
-            "ω4 (w4)",
+            "w4",
         ]
 
     @functools.cached_property
@@ -805,7 +805,7 @@ class ArcaeaGame(Game):
         return [
             "Climax",
             "Last Celebration",
-            "Misdeed -la bonté de Dieu et l'origine du mal-",
+            "Misdeed -la bont� de Dieu et l'origine du mal-",
         ]
 
     @functools.cached_property
@@ -882,7 +882,7 @@ class ArcaeaGame(Game):
             "REconstruction",
             "Evoltex (poppi'n mix)",
             "Oracle",
-            "αterlβus"
+            "aterlbus"
         ]
 
     def songs(self) -> List[str]:
