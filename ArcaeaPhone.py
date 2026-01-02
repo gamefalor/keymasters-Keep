@@ -687,7 +687,7 @@ class ArcaeaGame(Game):
             "Inverted World",
             "MVURBD",
             "Vulcanus",
-                    ]
+        ]
 
     @functools.cached_property
     def songs_pack_Cytus_II(self) -> List[str]:
