@@ -2,7 +2,7 @@ from __future__ import annotations
 import functools
 from typing import List, Dict, Set
 from dataclasses import dataclass
-from Options import Toggle, OptionSet, Choice, NamedRange, OptionList
+from Options import OptionSet, Choice, OptionList
 from ..game import Game
 from ..game_objective_template import GameObjectiveTemplate
 from ..enums import KeymastersKeepGamePlatforms
@@ -12,13 +12,13 @@ class ArcaeaArchipelagoOptions:
     Arcaea_DLC_Owned: ArcaeaPacksOwned
     Arcaea_Individual_Song_Selection: ArcaeaIndividualDLCSongs
     Arcaea_Required_Grades: ArcaeaRequiredGrades
-    Arcaea_Selected_Parners: ArcaeaPartners
-    
+    Arcaea_Selected_Partners: ArcaeaPartners
 
-class ArcaeaGame(Game):
+
+class BitsBopsGame(Game):
     name = "Arcaea"
     platform = KeymastersKeepGamePlatforms.AND
-    platforms_other = [
+    platforms_other =[
         KeymastersKeepGamePlatforms.IOS,
     ]
     is_adult_only_or_unrated = False 
@@ -72,7 +72,7 @@ class ArcaeaGame(Game):
         return sorted(grades)
 
     def partners(self) -> List[str]:
-        partners: List[str] = list(self.archipelago_options.Arcaea_Selected_Parners.value)
+        partners: List[str] = list(self.archipelago_options.Arcaea_Selected_Partners.value)
         return sorted(partners)
 
     @property
@@ -291,7 +291,6 @@ class ArcaeaGame(Game):
     def has_dlc_Dynamix(self) -> bool:
         return "Dynamix" in self.dlc_owned
 
-
     @functools.cached_property
     def songs_pack_Arcaea(self) -> List[str]:
         return [
@@ -331,8 +330,7 @@ class ArcaeaGame(Game):
             "Chronostasis",
             "Dialnote",
             "Grimheart",
-            "Senkyou",
-            "Anökumene",
+            "Anokumene",
             "Blaster",
             "Cybernecia Catharsis",
             "Dancin' on a Cat's Paw",
@@ -358,8 +356,8 @@ class ArcaeaGame(Game):
             "Nhelv",
             "SUPERNOVA",
             "Trap Crow",
-            "Red and Blue and Green"
-            "Ignotus Afterburn"
+            "Red and Blue and Green",
+            "Ignotus Afterburn",
         ]
 
     @functools.cached_property
@@ -371,7 +369,7 @@ class ArcaeaGame(Game):
             "ANDORXOR",
             "Undying Macula",
         ]
-
+    
     @functools.cached_property
     def songs_pack_Lucent_Historia(self) -> List[str]:
         return [
@@ -521,13 +519,14 @@ class ArcaeaGame(Game):
             "AlterGate",
         ]
 
+    
     @functools.cached_property
     def songs_pack_Esoteric_Order(self) -> List[str]:
         return [
             "Paper Witch",
             "Crystal Gravity",
             "Far Away Light",
-            "Löschen",
+            "Loschen",
             "Seclusion",
             "AegleSeeker",
         ]
@@ -554,15 +553,15 @@ class ArcaeaGame(Game):
             "First Snow",
             "Blocked Library",
             "Blue Rose",
-            "néo kósmo",
+            "neo kosmo",
             "Lightning Screw",
         ]
-
+    
     @functools.cached_property
     def songs_pack_Ephemeral_Page(self) -> List[str]:
         return [
             "Eccentric Tale",
-            "Alice à la mode",
+            "Alice a la mode",
             "Alice's Suitcase",
             "Jump",
             "Felis",
@@ -615,7 +614,7 @@ class ArcaeaGame(Game):
             "Ascent",
             "Live Fast Die Young",
         ]
-
+    
     @functools.cached_property
     def songs_pack_Ambivalent_Vision(self) -> List[str]:
         return [
@@ -658,7 +657,7 @@ class ArcaeaGame(Game):
             "OBLIVION",
             "Nightmare",
         ]
-
+    
     @functools.cached_property
     def songs_pack_DJMAX_Collab_2(self) -> List[str]:
         return [
@@ -705,8 +704,8 @@ class ArcaeaGame(Game):
             "syuten",
             "DRG",
             "99 Glooms",
-            "Cytus II 2 10+ with the messed up name",
-            "Magnolia",
+            "Cytus II 10+ with the name that is really weird",
+            "Magnolia"
         ]
 
     @functools.cached_property
@@ -732,7 +731,7 @@ class ArcaeaGame(Game):
     def songs_pack_WACCA_Collab_2(self) -> List[str]:
         return [
             "Stratoliner",
-            "Ouvertüre",
+            "Ouverture",
             "eden",
             "XTREME",
             "Meta-Mysteria",
@@ -746,7 +745,7 @@ class ArcaeaGame(Game):
             "Oshama Scramble",
             "AMAZING MIGHTYYYY!!!!",
         ]
-
+    
     @functools.cached_property
     def songs_pack_maimai_Collab_2(self) -> List[str]:
         return [
@@ -805,7 +804,7 @@ class ArcaeaGame(Game):
         return [
             "Climax",
             "Last Celebration",
-            "Misdeed -la bonté de Dieu et l'origine du mal-",
+            "Misdeed -la bonte de Dieu et l'origine du mal-",
         ]
 
     @functools.cached_property
@@ -838,7 +837,7 @@ class ArcaeaGame(Game):
             "Scarlet Lance",
             "ouroboros -twin stroke of the end-",
         ]
-
+    
     @functools.cached_property
     def songs_pack_Groove_Coaster_Collab_2(self) -> List[str]:
         return [
@@ -882,7 +881,7 @@ class ArcaeaGame(Game):
             "REconstruction",
             "Evoltex (poppi'n mix)",
             "Oracle",
-            "aterlbus"
+            "aterlbus",
         ]
 
     def songs(self) -> List[str]:
@@ -1016,10 +1015,10 @@ class ArcaeaGame(Game):
 # Archipelago Options
 class ArcaeaPacksOwned(OptionSet):
     """
-    Indicates which Arcaea packs you player own.
-    World Extend, Extend Archive & Memory archive are not valid options due to buying the songs individually.
-    BYDS with a different name that require multiple packs to unlock are not automatically added and you should look to the second option to add them
-    Look in Arcaea.txt to get valid options
+    Indiciates which Arcaea packs the player owns.
+    World Extends & Memory Archive arent valid options, look in the next option to put the songs from that in
+    The two byds which require multiple purchases are not automatically included
+    Look in Arcaea.txt for a list of valid options
     """
 
     display_name = "Arcaea Packs Owned"
@@ -1079,11 +1078,6 @@ class ArcaeaPacksOwned(OptionSet):
         "Lanota Collab 2",
         "Dynamix",
     ]
-
-    default = [
-        "Arcaea",
-    ]
-
 class ArcaeaIndividualDLCSongs(OptionSet):
     """
     Which Other songs not part of a pack youd like to add in.
