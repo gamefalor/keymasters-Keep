@@ -15,7 +15,7 @@ class ArcaeaArchipelagoOptions:
     Arcaea_Selected_Partners: ArcaeaPartners
 
 
-class BitsBopsGame(Game):
+class ArcaeaGame(Game):
     name = "Arcaea"
     platform = KeymastersKeepGamePlatforms.AND
     platforms_other =[
@@ -1078,6 +1078,10 @@ class ArcaeaPacksOwned(OptionSet):
         "Lanota Collab 2",
         "Dynamix",
     ]
+
+    default = [
+        "Arcaea",
+        ]
 class ArcaeaIndividualDLCSongs(OptionSet):
     """
     Which Other songs not part of a pack youd like to add in.
