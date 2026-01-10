@@ -137,7 +137,7 @@ class BitsBopsGame(Game):
     
     @property
     def Race_Enabled(self) -> bool:
-        return "Race" in self.Infinite_games
+        return "Three Legged Race" in self.Infinite_games
     
     @property
     def Blacksmith_Enabled(self) -> bool:
