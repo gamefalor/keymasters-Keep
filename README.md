@@ -11,4 +11,4 @@ use of this is done so that the default yaml CAN be completed by everyone
 
 Bits & Bops (PC)
 latest update: 30-12-25
-- added infinite games and 7 new options to support them
+- made 3 legged race succesfully appear
