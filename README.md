@@ -1,4 +1,4 @@
-Feel Free to Ping me about ANYTHING to do with these
+Feel Free to Ping me about any bugs or other things that shouldnt happen
 
 Arcaea (AND + IOS)
 latest update: 7-1-26
@@ -12,3 +12,7 @@ use of this is done so that the default yaml CAN be completed by everyone
 Bits & Bops (PC)
 latest update: 30-12-25
 - made 3 legged race succesfully appear
+
+Poition Craft
+latest update: 11-01-25
+- released it
