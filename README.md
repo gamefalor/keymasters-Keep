@@ -14,5 +14,5 @@ latest update: 30-12-25
 - made 3 legged race succesfully appear
 
 Poition Craft
-latest update: 11-01-25
-- released it
+latest update: 21-01-25
+- toned down the books restriciton
