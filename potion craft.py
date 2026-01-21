@@ -988,9 +988,9 @@ class PotionCraft(Game):
     @functools.cached_property
     def Base_Restrictions(self) -> list[str]:
         return [
-            "collecting 50 singular books",
-            "collecting 25 dual books",
-            "collecting 10 triple books",
+            "collecting 10 singular books",
+            "collecting 5 dual books",
+            "collecting 3 triple books",
             "collecting 2 quadruple books",
             "collecting 1 quintuple books",
             "not Running into skulls",
