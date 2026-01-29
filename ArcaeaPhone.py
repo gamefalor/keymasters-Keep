@@ -29,16 +29,6 @@ class ArcaeaGame(Game):
     def game_objective_templates(self) -> List[GameObjectiveTemplate]:
         templates: List[GameObjectiveTemplate] = [
             GameObjectiveTemplate(
-                label="Clear SONGS in a row",
-                data={
-                    "SONGS": (self.songs, 4),
-                },
-                is_time_consuming=False,
-                is_difficult=False,
-                weight=1,
-            ),
-
-            GameObjectiveTemplate(
                 label="Achieve GRADE on SONG",
                 data={
                     "SONG": (self.songs, 1),
@@ -46,7 +36,7 @@ class ArcaeaGame(Game):
                 },
                 is_time_consuming=False,
                 is_difficult=False,
-                weight=10,
+                weight=4,
             ),
 
             GameObjectiveTemplate(
@@ -57,7 +47,7 @@ class ArcaeaGame(Game):
                 },
                 is_time_consuming=False,
                 is_difficult=False,
-                weight=2,
+                weight=1,
             ),
         ]
 
@@ -186,6 +176,10 @@ class ArcaeaGame(Game):
     @property
     def has_dlc_Crimson_Solace(self) -> bool:
         return "Crimson Solace" in self.dlc_owned
+
+    @property
+    def has_dlc_MEGAREX(self) -> bool:
+        return "MEGAREX" in self.dlc_owned
 
     @property
     def has_dlc_Arcaea_Next_Stage(self) -> bool:
@@ -638,6 +632,16 @@ class ArcaeaGame(Game):
         ]
 
     @functools.cached_property
+    def songs_pack_MEGAREX(self) -> List[str]:
+        return [
+            "CHAIN2NITE",
+            "My life in mine alone!",
+            "Melty Rhapsody",
+            "One Step Closer",
+            "Signal"
+        ]
+
+    @functools.cached_property
     def songs_pack_Arcaea_Next_Stage(self) -> List[str]:
         return [
             "INFINITE DIMENSION",
@@ -947,6 +951,8 @@ class ArcaeaGame(Game):
             songs.extend(self.songs_pack_Ambivalent_Vision)
         if self.has_dlc_Crimson_Solace:
             songs.extend(self.songs_pack_Crimson_Solace)
+        if self.has_dlc_MEGAREX:
+            songs.extend(self.songs_pack_MEGAREX)
         if self.has_dlc_Arcaea_Next_Stage:
             songs.extend(self.songs_pack_Arcaea_Next_Stage)
         if self.has_dlc_DJMAX:
@@ -1051,6 +1057,7 @@ class ArcaeaPacksOwned(OptionSet):
         "Shared Time",
         "Ambivalent Vision",
         "Crimson Solace",
+        "MEGAREX",
         "Arcaea Next Stage",
         "DJMAX",
         "DJMAX Collab 2",
@@ -1132,7 +1139,7 @@ class ArcaeaRequiredGrades(OptionList):
         "Hard Clear",
         "NC",
         "Normal Clear",
-        "EC",
+        "EC"
         "Easy Clear",
     ]
 
@@ -1140,7 +1147,7 @@ class ArcaeaRequiredGrades(OptionList):
         "AA",
         "AA",
         "AA",
-        "NC",
+        "Normal Clear",
     ]
 class ArcaeaPartners(OptionList):
     """
