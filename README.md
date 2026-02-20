@@ -1,12 +1,10 @@
 Feel Free to Ping me about any bugs or other things that shouldnt happen
 
 Arcaea (AND + IOS)
-latest update: 29-1-26
-- added megarex to the implementation
-- added OMAJINAI to the txt
-- added the new partner to the txt
-- changed the weights
-- removed the playlist trial
+latest update: 20-2-26
+- Added in Gimme Caramel Popcorn!
+- Added in +1 (UNKNOWN)NUMBER
+- Added in  The Forgotten Forest Haven
 
 remember to use the Arcaea.txt if you wish to not have to test gen every time because it gives the stuff you have to copy paste
 
