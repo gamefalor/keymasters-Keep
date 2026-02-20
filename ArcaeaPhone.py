@@ -308,6 +308,7 @@ class ArcaeaGame(Game):
             "DDD",
             "Diode",
             "FreeF4ll",
+            "Gimme Caramel Popcorn!",
             "Harutopia ~Utopia of Spring~",
             "Lucifer",
             "Oblivia",
