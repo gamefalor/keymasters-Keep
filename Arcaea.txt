@@ -6,7 +6,7 @@ these have been grouped for your convenience
 
 
 Valid Packs:
-	'Arcaea', 'Liminal Eclipse', 'Lucent Historia', 'Absolute Nihil', 'Lasting Eden', 'Lasting Eden Chapter 2', 'Shifting Veil', 'Silent Awnser', 'Final Verdict', 'Black Fate', 'Adverse Prelude', 'Luminous Sky', 'Vicious Labyrinth', 'Eternal Core', 'Extant Anima', 'Chapter Experientia', 'Esoteric Order', 'Pale Tapestry', 'Light Of Salvation', 'Divided Heart', 'Ephemeral Page', 'The Journey Onwards', 'Sunset Radiance', 'Absolute Reason', 'Binary Enfold', 'Shared Time', 'Ambivalent Vision', 'Crimson Solace', 'MEGAREX', 'Arcaea Next Stage', 'DJMAX', 'DJMAX Collab 2', 'UNDERTALE', 'Rotaeno', 'Cytus II', 'Cytus II Collab 2', 'Muse Dash', 'WACCA', 'WACCA Collab 2', 'maimai', 'maimai Collab 2', 'maimai Collab 3', 'O.N.G.E.K.I.', 'O.N.G.E.K.I. Collab 2', 'O.N.G.E.K.I. Collab 3', 'CHUNITHM', 'CHUNITHM Collab 2', 'CHUNITHM Collab 3', 'CHUNITHM Collab 4', 'Groove Coaster', 'Groove Coaster Collab 2', 'Tone Sphere', 'Lanota', 'Lanota Collab 2', 'Dynamix'
+	'Arcaea', 'Liminal Eclipse', 'Lucent Historia', 'Absolute Nihil', 'Lasting Eden', 'Lasting Eden Chapter 2', 'Shifting Veil', 'Silent Awnser', 'Final Verdict', 'Black Fate', 'Adverse Prelude', 'Luminous Sky', 'Vicious Labyrinth', 'Eternal Core', 'Extant Anima', 'Chapter Experientia', 'Esoteric Order', 'Pale Tapestry', 'Light Of Salvation', 'Divided Heart', 'Ephemeral Page', 'The Journey Onwards', 'Sunset Radiance', 'Absolute Reason', 'Binary Enfold', 'Shared Time', 'Ambivalent Vision', 'Crimson Solace', 'MEGAREX', 'Arcaea Next Stage', 'DJMAX', 'DJMAX Collab 2', 'UNDERTALE', 'Rotaeno', 'Cytus II', 'Cytus II Collab 2', 'Muse Dash', 'WACCA', 'WACCA Collab 2', 'maimai', 'maimai Collab 2', 'maimai Collab 3', 'O.N.G.E.K.I.', 'O.N.G.E.K.I. Collab 2', 'O.N.G.E.K.I. Collab 3', 'CHUNITHM', 'CHUNITHM Collab 2', 'CHUNITHM Collab 3', 'CHUNITHM Collab 4', 'Groove Coaster', 'Groove Coaster Collab 2', 'Tone Sphere', 'Lanota', 'Lanota Collab 2', 'Dynamix', 'MEGAREX'
 
   Free: 
     'Arcaea'
@@ -79,6 +79,7 @@ Partners
 
   Okay these do literally nothing different from just selecting tairitsu in regards to challenge
     'Tairitsu', 'Kou', 'Sapphire', 'Axium Tairitsu', 'Stella', 'Eto', 'Awakened Eto', 'Awakaned Luna', 'Shirabe', 'Awakened Shirabe', 'Ayu', 'Awakened Ayu', 'Yume', 'Awakened Yume', 'Hikari & Seine', 'Awakened Saya', 'Grievous Lady Tairitsu & Chuni Penguin', 'Chuni Penguin', 'Nono Shibusawa', 'Awakened Kanae', 'Fantasia Hikari', 'Sonata Tairitsu', 'Etude Saya', 'Luna & Mia', 'Lagrange', 'Nami', 'Saya & Elizabeth', 'Lily', 'Kanae', 'Shirahime', 'Minuet Alice & Tenniel', 'Elegy Tairitsu', 'Reunion Hikari & Tairitsu', 'Saki', 'Amane', 'Winter Kou', 'Aria Lagrange', 'UNiVERSE Shama', 'UNiVERSE milk', 'Mika Yurisaki', 'Illith & Ivy', 'Maya', 'Cadenza Vita', 'Ai-chan', 'Luna & Ilot', 'Eto & Hoppe', 'Chinatsu', 'Tsumugi', 'Nai', 'Salt', 'Hikari & El Clear', 'Twilight Nami & Sui', 'Nonoka', 'Wanderer Vita', 'Breakthrough Hikary & Tairitsu', 'Debut Hikari & Tairitsu', 'Flow Shirahime'
+
 
 
 
