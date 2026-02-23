@@ -998,7 +998,7 @@ class PotionCraft(Game):
             "not using any plants",
             "not using any mushrooms",
             "only using 3 unique ingredients excluding the base",
-            "using only the items sold by 1 instance of a merchant",
+            "using only the items sold by 1 instance of a merchant and its duplicates",
         ]
 
     @functools.cached_property
@@ -1127,5 +1127,6 @@ class PotionCraftWaterBaseDifficulty(Toggle):
     """
     Whether to include Potion Effects in the Outer Ring in the water base
     """
+
 
     display_name = "Potion Craft Water Base Difficulty"
