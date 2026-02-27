@@ -998,7 +998,7 @@ class PotionCraft(Game):
             "not using any plants",
             "not using any mushrooms",
             "only using 3 unique ingredients excluding the base",
-            "using only the items sold by 1 instance of a merchant and its duplicates",
+            "using only the items sold by 1 instance of a merchant",
         ]
 
     @functools.cached_property
@@ -1130,3 +1130,4 @@ class PotionCraftWaterBaseDifficulty(Toggle):
 
 
     display_name = "Potion Craft Water Base Difficulty"
+
