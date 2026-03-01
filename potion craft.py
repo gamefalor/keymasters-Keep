@@ -988,16 +988,12 @@ class PotionCraft(Game):
     @functools.cached_property
     def Base_Restrictions(self) -> list[str]:
         return [
-            "collecting 10 singular books",
-            "collecting 5 dual books",
-            "collecting 3 triple books",
             "collecting 2 quadruple books",
             "collecting 1 quintuple books",
             "not Running into skulls",
-            "not Stirring before putting all your ingredients in",
             "not using any plants",
             "not using any mushrooms",
-            "only using 3 unique ingredients excluding the base",
+            "only using 5 unique ingredients excluding the base",
             "using only the items sold by 1 instance of a merchant",
         ]
 
@@ -1026,7 +1022,7 @@ class PotionCraft(Game):
         return [
             "Not using Any crystals",
             "Not using Any salts",
-            "Going through 3 whirlpools",
+            "Going through 2 whirlpools",
             "not using any extra oil",
             'clicking the "Finish Potion" button at the edge of the map',
             "not touching any swamps",
@@ -1114,20 +1110,12 @@ class ObjectiveTypes(OptionSet):
         "Dual Medium with Side Effect",
         "Strong with side effect",
         "Strong with two side effects",
-        "Chaos",
         "Strong Potion with 1 restriction",
         "Weak Potion with 1 restriction",
-        "Dual Medium with Side Effect with 1 restriction",
-        "Strong with side effect with 1 restriction",
-        "Strong with two side effects with 1 restriction",
-        "Strong Potion with 2 restrictions",
-        "Weak Potion with 2 restrictions",
     ]
 class PotionCraftWaterBaseDifficulty(Toggle):
     """
     Whether to include Potion Effects in the Outer Ring in the water base
     """
 
-
     display_name = "Potion Craft Water Base Difficulty"
-
