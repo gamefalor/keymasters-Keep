@@ -17,4 +17,4 @@ latest update: 30-12-25
 
 Poition Craft
 latest update: 21-01-25
-- toned down the books restriciton
+Not recommended to play, will be updating it to make it slightly better
