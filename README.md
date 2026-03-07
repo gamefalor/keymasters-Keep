@@ -12,8 +12,8 @@ use of this is done so that the default yaml CAN be completed by everyone
 
 
 Bits & Bops (PC)
-latest update: 30-12-25
-- made 3 legged race succesfully appear
+latest update: 7-3-25
+- Added support for different speeds
 
 Poition Craft
 latest update: 21-01-25
