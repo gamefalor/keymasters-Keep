@@ -1,10 +1,11 @@
 Feel Free to Ping me about any bugs or other things that shouldnt happen
 
 Arcaea (AND + IOS)
-latest update: 20-2-26
-- Added in Gimme Caramel Popcorn!
-- Added in +1 (UNKNOWN)NUMBER
-- Added in  The Forgotten Forest Haven
+latest update: 11-3-26
+- Added 3rd Avenue
+- Added Vallista
+- Added Desertrealm
+- Fixed Manic Jeer Typo
 
 remember to use the Arcaea.txt if you wish to not have to test gen every time because it gives the stuff you have to copy paste
 
