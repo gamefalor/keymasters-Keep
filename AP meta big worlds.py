@@ -13,6 +13,7 @@ class APBigWorldsOptions:
     AP_BigWorlds_Goal_List: APBigWorldsGoalList
     AP_BigWorlds_Gimmick_Toggle: APBigWorldsGimmickToggle
     AP_BigWorlds_Gimmick_List: APBigWorldsGimmicks
+    AP_BigWorlds_Safety: APBigWorldsIKnowWhatImDoing
 
 
 class APBigWorlds(Game):
@@ -98,7 +99,7 @@ class APBigWorlds(Game):
         ]
         
         return templates
-    
+
     @property
     def GameList(self) -> list[str]:
         return sorted (self.archipelago_options.AP_BigWorlds_Game_List.value)
@@ -175,6 +176,13 @@ class APBigWorlds(Game):
 
 # Archipelago Options
 # dont you love stealing code from eav
+class APBigWorldsIKnowWhatImDoing(Toggle):
+    """
+    this setting does nothing, just here so you hopefully read this if you didnt read it already
+    do not under any circumstances put this game in medley mode, it will break
+    when playing this kmk, read the optional conditions, those are the world settings, you need those
+    """
+
 class APBigWorldsGameList(OptionList):
     """
     Which games will be in the pool
