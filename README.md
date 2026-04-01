@@ -1,7 +1,8 @@
 Feel Free to Ping me about any bugs or other things that shouldnt happen
 
 Ap Meta Big worlds (Meta)
-!!this kmk implementation expects an entire keep to be played at once
+- !!this kmk implementation expects an entire keep to be played at once
+- !!this kmk implementation will NOT work in medley
 latest update: 30-03-26
 
 Arcaea (AND + IOS)
