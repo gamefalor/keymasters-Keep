@@ -615,7 +615,7 @@ class ArcaeaGame(Game):
         return [
             "Blossoms",
             "Romance Wars",
-            "Genesis",
+            "Genesis (Iris)",
             "Moonheart",
             "Lethaeus",
             "corps-sans-organes",
@@ -817,7 +817,7 @@ class ArcaeaGame(Game):
         return [
             "Cosmo Pop Fanclub",
             "IMPACT",
-            "Genesis",
+            "Genesis (Morrigan feat.Lily)",
             "Trricksters!!",
             "Spider's Thread",
         ]
