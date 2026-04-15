@@ -1,4 +1,5 @@
 from __future__ import annotations
+from calendar import different_locale
 import functools
 from typing import List, Dict, Set
 from dataclasses import dataclass
@@ -10,9 +11,13 @@ from ..enums import KeymastersKeepGamePlatforms
 @dataclass
 class BitsBopsArchipelagoOptions:
     Bits_Bops_16_Difficulty: BitsBops16Difficulty
+    Bits_Bops_16_weight: BitsBops16Weight
     Bits_Bops_33_Difficulty: BitsBops33Difficulty
+    Bits_Bops_33_weight: BitsBops33Weight
     Bits_Bops_45_Difficulty: BitsBops45Difficulty
+    Bits_Bops_45_weight: BitsBops45Weight
     Bits_Bops_78_Difficulty: BitsBops78Difficulty
+    Bits_Bops_78_weight: BitsBops78Weight
     Bits_Bops_Infinite_games: BitsBopsInfiniteGameSelection
     Bits_Bops_Min_Clock: BitsBopsClockMinScore
     Bits_Bops_Max_Clock: BitsBopsClockMaxScore
@@ -42,7 +47,7 @@ class BitsBopsGame(Game):
                     },
                     is_time_consuming=False,
                     is_difficult=False,
-                    weight=self.DifferentSpeedsEnabled,
+                    weight=self.InfinitesWeight,
                 ),
             ])
 
@@ -54,7 +59,7 @@ class BitsBopsGame(Game):
                     },
                     is_time_consuming=False,
                     is_difficult=False,
-                    weight=self.DifferentSpeedsEnabled,
+                    weight=self.InfinitesWeight,
                 ),
             ])
 
@@ -67,7 +72,7 @@ class BitsBopsGame(Game):
                     },
                     is_time_consuming=False,
                     is_difficult=False,
-                    weight=self.DifferentSpeedsEnabled,
+                    weight=self.InfinitesWeight,
                 ),
             ])
 
@@ -80,7 +85,7 @@ class BitsBopsGame(Game):
                     },
                     is_time_consuming=False,
                     is_difficult=False,
-                    weight=self.DifferentSpeedsEnabled,
+                    weight=self.InfinitesWeight,
                 ),
             ])
 
@@ -92,7 +97,7 @@ class BitsBopsGame(Game):
                     },
                     is_time_consuming=False,
                     is_difficult=False,
-                    weight=self.DifferentSpeedsEnabled,
+                    weight=self.InfinitesWeight,
                 ),
             ])
         
@@ -112,7 +117,7 @@ class BitsBopsGame(Game):
                     },
                 is_time_consuming=False,
                 is_difficult=False,
-                weight=20,
+                weight= 21 * self.BitsBops33Weight,
             ),
         ])
         elif self.EnabledDiff33:
@@ -125,7 +130,7 @@ class BitsBopsGame(Game):
                     },
                 is_time_consuming=False,
                 is_difficult=False,
-                weight=20,
+                weight= 21 * self.BitsBops33Weight,
             ),
         ])
 
@@ -139,7 +144,7 @@ class BitsBopsGame(Game):
                     },
                 is_time_consuming=False,
                 is_difficult=False,
-                weight=20,
+                weight= 21 * self.BitsBops16Weight,
             ),
         ])
 
@@ -153,7 +158,7 @@ class BitsBopsGame(Game):
                     },
                 is_time_consuming=False,
                 is_difficult=False,
-                weight=20,
+                weight= 21 * self.BitsBops45Weight,
             ),
         ])
 
@@ -167,7 +172,7 @@ class BitsBopsGame(Game):
                     },
                 is_time_consuming=False,
                 is_difficult=False,
-                weight=20,
+                weight= 21 * BitsBops78Weight,
             ),
         ])
         
@@ -178,8 +183,6 @@ class BitsBopsGame(Game):
     def Infinite_games(self) -> List[str]:
         return sorted(self.archipelago_options.Bits_Bops_Infinite_games.value)
 
-    # this feels very cursed, no clue how to make it less cursed lmao
-    # i miss c#
     @functools.cached_property
     def Cool(self) -> list[str]:
         return [
@@ -207,6 +210,9 @@ class BitsBopsGame(Game):
         if (self.archipelago_options.Bits_Bops_16_Difficulty.value > 2):
             Scores16.extend(self.Perfect)
         return Scores16
+    @property
+    def Weight16(self) -> int:
+        return int(self.archipelago_options.Bits_Bops_16_weight.value)
     
     @property
     def EnabledDiff33(self) -> bool:
@@ -219,6 +225,9 @@ class BitsBopsGame(Game):
         if (self.archipelago_options.Bits_Bops_33_Difficulty.value > 2):
             Scores33.extend(self.Perfect)
         return Scores33
+    @property
+    def Weight33(self) -> int:
+        return int(self.archipelago_options.Bits_Bops_33_weight.value)
     
     @property
     def EnabledDiff45(self) -> bool:
@@ -231,6 +240,9 @@ class BitsBopsGame(Game):
         if (self.archipelago_options.Bits_Bops_45_Difficulty.value > 2):
             Scores45.extend(self.Perfect)
         return Scores45
+    @property
+    def Weight45(self) -> int:
+        return int(self.archipelago_options.Bits_Bops_45_weight.value)
     
     @property
     def EnabledDiff78(self) -> bool:
@@ -243,18 +255,23 @@ class BitsBopsGame(Game):
         if (self.archipelago_options.Bits_Bops_78_Difficulty.value > 2):
             Scores78.extend(self.Perfect)
         return Scores78
+    @property
+    def Weight78(self) -> int:
+        return int(self.archipelago_options.Bits_Bops_78_weight.value)
 
     @property
-    def DifferentSpeedsEnabled(self) -> int:
+    def InfinitesWeight(self) -> int:
         DifferentSpeedsEnabled = 0
         if (self.EnabledDiff16):
-            DifferentSpeedsEnabled = DifferentSpeedsEnabled + 1
+            DifferentSpeedsEnabled += BitsBops16Weight
         if (self.EnabledDiff33):
-            DifferentSpeedsEnabled = DifferentSpeedsEnabled + 1
+            DifferentSpeedsEnabled += BitsBops33Weight
         if (self.EnabledDiff45):
-            DifferentSpeedsEnabled = DifferentSpeedsEnabled + 1
+            DifferentSpeedsEnabled += BitsBops45Weight
         if (self.EnabledDiff78):
-            DifferentSpeedsEnabled = DifferentSpeedsEnabled + 1
+            DifferentSpeedsEnabled += BitsBops78Weight
+        if (DifferentSpeedsEnabled == 0):
+            DifferentSpeedsEnabled = 1
         return (DifferentSpeedsEnabled)
 
     @property
@@ -335,7 +352,13 @@ class BitsBops16Difficulty(Choice):
     option_Amazing = 2
     option_Perfect = 3
     default = 0
-
+class BitsBops16Weight(Range):
+    """
+    the weight at which speed 16 will show up if enabled
+    """
+    range_start = 1
+    range_end = 10
+    default = 1
 class BitsBops33Difficulty(Choice):
     """ 
     Defines the maximum rating the 33 speed will ask of you
@@ -347,7 +370,13 @@ class BitsBops33Difficulty(Choice):
     option_Amazing = 2
     option_Perfect = 3
     default = 2
-
+class BitsBops33Weight(Range):
+    """
+    the weight at which speed 33 will show up if enabled
+    """
+    range_start = 1
+    range_end = 10
+    default = 1
 class BitsBops45Difficulty(Choice):
     """ 
     Defines the maximum rating the 45 speed will ask of you
@@ -363,7 +392,13 @@ class BitsBops45Difficulty(Choice):
     option_Amazing = 2
     option_Perfect = 3
     default = 0
-
+class BitsBops45Weight(Range):
+    """
+    the weight at which speed 45 will show up if enabled
+    """
+    range_start = 1
+    range_end = 10
+    default = 1
 class BitsBops78Difficulty(Choice):
     """ 
     Defines the maximum rating the 78 speed will ask of you
@@ -379,7 +414,13 @@ class BitsBops78Difficulty(Choice):
     option_Amazing = 2
     option_Perfect = 3
     default = 0
-    
+class BitsBops78Weight(Range):
+    """
+    the weight at which speed 78 will show up if enabled
+    """
+    range_start = 1
+    range_end = 10
+    default = 1 
 class BitsBopsInfiniteGameSelection(OptionSet):
     """
     Which of the *5* infinite games to include
