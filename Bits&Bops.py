@@ -113,11 +113,20 @@ class BitsBopsGame(Game):
                     label="Get at least RESULT in SONG",
                     data={
                         "RESULT": (self.Scores33, 1),
-                        "SONG": (self.songs, 1),
+                        "SONG": (self.Songs, 1),
                     },
                 is_time_consuming=False,
                 is_difficult=False,
-                weight= 21 * self.BitsBops33Weight,
+                weight= 21 * self.EXWeight33,
+            ),
+                GameObjectiveTemplate(
+                    label="Get at least PERFECT in SONG",
+                    data={
+                        "RESULT": (self.Scores33, 1),
+                    },
+                is_time_consuming=False,
+                is_difficult=True,
+                weight= 21 * self.EXWeight33,
             ),
         ])
         elif self.EnabledDiff33:
@@ -126,11 +135,21 @@ class BitsBopsGame(Game):
                     label="Get at least RESULT in SONG at speed 33",
                     data={
                         "RESULT": (self.Scores33, 1),
-                        "SONG": (self.songs, 1),
+                        "SONG": (self.Songs, 1),
                     },
                 is_time_consuming=False,
-                is_difficult=False,
-                weight= 21 * self.BitsBops33Weight,
+                is_difficult=True,
+                weight= 21 * self.Weight33 * self.EXWeight33,
+            ),
+                GameObjectiveTemplate(
+                    label="Get at least PERFECT in SONG at speed 33",
+                    data={
+                        "RESULT": (self.Scores33, 1),
+                        "SONG": (self.Songs, 1),
+                    },
+                is_time_consuming=False,
+                is_difficult=True,
+                weight= 21 * self.Weight33,
             ),
         ])
 
@@ -140,39 +159,83 @@ class BitsBopsGame(Game):
                     label="Get at least RESULT in SONG at speed 16",
                     data={
                         "RESULT": (self.Scores16, 1),
-                        "SONG": (self.songs, 1),
+                        "SONG": (self.Songs, 1),
                     },
                 is_time_consuming=False,
                 is_difficult=False,
-                weight= 21 * self.BitsBops16Weight,
+                weight= 21 * self.Weight16 * self.EXWeight16,
+            ),
+        ])
+        if self.EnabledPerfect16:
+            SongTemplates.extend([
+                GameObjectiveTemplate(
+                    label="Get at least PERFECT in SONG at speed 16",
+                    data={
+                        "SONG": (self.Songs, 1),
+                    },
+                is_time_consuming=False,
+                is_difficult=True,
+                weight= 21 * self.Weight16,
             ),
         ])
 
         if self.EnabledDiff45:
             SongTemplates.extend([
                 GameObjectiveTemplate(
-                    label="Get at least RESULT in SONG at speed 45",
+                    label="Get at least COOL in SONG at speed 45",
                     data={
-                        "RESULT": (self.Scores45, 1),
-                        "SONG": (self.songs, 1),
+                        "SONG": (self.EasySongs, 1),
                     },
                 is_time_consuming=False,
                 is_difficult=False,
-                weight= 21 * self.BitsBops45Weight,
+                weight= 21 * self.Weight45,
+            ),
+        ])
+        if self.EnabledEXDiff45:
+            SongTemplates.extend([
+                GameObjectiveTemplate(
+                    label="Get at least COOL in SONG at speed 45",
+                    data={
+                        "SONG": (self.Songs, 1),
+                    },
+                is_time_consuming=False,
+                is_difficult=True,
+                weight= 21 * self.Weight45 * (self.archipelago_options.Bits_Bops_45_Difficulty.value - 1),
             ),
         ])
 
         if self.EnabledDiff78:
             SongTemplates.extend([
                 GameObjectiveTemplate(
-                    label="Get at least RESULT in SONG at speed 78",
+                    label="Get at least COOL in SONG at speed 78",
                     data={
-                        "RESULT": (self.Scores78, 1),
-                        "SONG": (self.songs, 1),
+                        "SONG": (self.EasySongs, 1),
                     },
                 is_time_consuming=False,
                 is_difficult=False,
-                weight= 21 * BitsBops78Weight,
+                weight= 12 * self.Weight78,
+            ),
+                GameObjectiveTemplate(
+                    label="Get at least COOL in SONG at speed 78",
+                    data={
+                        "SONG": (self.HardSongs, 1),
+                    },
+                is_time_consuming=False,
+                is_difficult=True,
+                weight= 9 * self.Weight78,
+            ),
+        ])
+        if self.EnabledEXDiff78:
+            SongTemplates.extend([
+                GameObjectiveTemplate(
+                    label="Get at least RESULT in SONG at speed 78",
+                    data={
+                        "RESULT": (self.HardScores78, 1),
+                        "SONG": (self.Songs, 1),
+                    },
+                is_time_consuming=False,
+                is_difficult=True,
+                weight= 21 * self.Weight78 * (self.archipelago_options.Bits_Bops_78_Difficulty.value - 1),
             ),
         ])
         
@@ -207,12 +270,18 @@ class BitsBopsGame(Game):
         Scores16 = self.Cool[:]
         if (self.archipelago_options.Bits_Bops_16_Difficulty.value > 1):
             Scores16.extend(self.Amazing)
-        if (self.archipelago_options.Bits_Bops_16_Difficulty.value > 2):
-            Scores16.extend(self.Perfect)
         return Scores16
+    def EnabledPerfect16(self) -> bool:
+        return bool(self.archipelago_options.Bits_Bops_16_Difficulty.value == 3)
     @property
     def Weight16(self) -> int:
-        return int(self.archipelago_options.Bits_Bops_16_weight.value)
+        return self.archipelago_options.Bits_Bops_16_weight.value
+    @property 
+    def EXWeight16(self) -> int:
+        if (self.archipelago_options.Bits_Bops_16_weight.value < 3):
+            return self.archipelago_options.Bits_Bops_16_weight.value
+        else:
+            return 2
     
     @property
     def EnabledDiff33(self) -> bool:
@@ -222,22 +291,29 @@ class BitsBopsGame(Game):
         Scores33 = self.Cool[:]
         if (self.archipelago_options.Bits_Bops_33_Difficulty.value > 1):
             Scores33.extend(self.Amazing)
-        if (self.archipelago_options.Bits_Bops_33_Difficulty.value > 2):
-            Scores33.extend(self.Perfect)
         return Scores33
+    def EnabledPerfect33(self) -> bool:
+        return bool(self.archipelago_options.Bits_Bops_33_Difficulty.value == 3)
     @property
     def Weight33(self) -> int:
         return int(self.archipelago_options.Bits_Bops_33_weight.value)
+    @property 
+    def EXWeight33(self) -> int:
+        if (self.archipelago_options.Bits_Bops_33_weight.value < 3):
+            return self.archipelago_options.Bits_Bops_33_weight.value
+        else:
+            return 2
     
     @property
     def EnabledDiff45(self) -> bool:
         return bool(self.archipelago_options.Bits_Bops_45_Difficulty.value != 0)
     @property
+    def EnabledEXDiff45(self) -> bool:
+        return bool(self.archipelago_options.Bits_Bops_45_Difficulty.value > 1)
+    @property
     def Scores45(self) -> list[str]:
-        Scores45 = self.Cool[:]
+        Scores45 = self.Amazing[:]
         if (self.archipelago_options.Bits_Bops_45_Difficulty.value > 1):
-            Scores45.extend(self.Amazing)
-        if (self.archipelago_options.Bits_Bops_45_Difficulty.value > 2):
             Scores45.extend(self.Perfect)
         return Scores45
     @property
@@ -248,10 +324,11 @@ class BitsBopsGame(Game):
     def EnabledDiff78(self) -> bool:
         return bool(self.archipelago_options.Bits_Bops_78_Difficulty.value != 0)
     @property
-    def Scores78(self) -> list[str]:
-        Scores78 = self.Cool[:]
-        if (self.archipelago_options.Bits_Bops_78_Difficulty.value > 1):
-            Scores78.extend(self.Amazing)
+    def EnabledEXDiff78(self) -> bool:
+        return bool(self.archipelago_options.Bits_Bops_78_Difficulty.value > 1)
+    @property
+    def HardScores78(self) -> list[str]:
+        Scores78 = self.Amazing[:]
         if (self.archipelago_options.Bits_Bops_78_Difficulty.value > 2):
             Scores78.extend(self.Perfect)
         return Scores78
@@ -263,13 +340,13 @@ class BitsBopsGame(Game):
     def InfinitesWeight(self) -> int:
         DifferentSpeedsEnabled = 0
         if (self.EnabledDiff16):
-            DifferentSpeedsEnabled += BitsBops16Weight
+            DifferentSpeedsEnabled += self.Weight16
         if (self.EnabledDiff33):
-            DifferentSpeedsEnabled += BitsBops33Weight
+            DifferentSpeedsEnabled += self.Weight33
         if (self.EnabledDiff45):
-            DifferentSpeedsEnabled += BitsBops45Weight
+            DifferentSpeedsEnabled += self.Weight45
         if (self.EnabledDiff78):
-            DifferentSpeedsEnabled += BitsBops78Weight
+            DifferentSpeedsEnabled += self.Weight78
         if (DifferentSpeedsEnabled == 0):
             DifferentSpeedsEnabled = 1
         return (DifferentSpeedsEnabled)
@@ -310,7 +387,7 @@ class BitsBopsGame(Game):
         return range(int(self.archipelago_options.Bits_Bops_Min_Smith.value),int(self.archipelago_options.Bits_Bops_Max_Smith.value) +1)
 
     @staticmethod
-    def songs() -> List[str]:
+    def Songs() -> List[str]:
         return [
             "Flipper Snapper",
             "Sweet Tooth",
@@ -334,7 +411,37 @@ class BitsBopsGame(Game):
             "FIRE MIXTAPE",
             "FINAL MIXTAPE",
         ]
+    
+    @staticmethod
+    def EasySongs() -> List[str]:
+        return [
+            "Flipper Snapper",
+            "Sweet Tooth",
+            "Rock, Paper, Showdown!",
+            "B-BOT & THE FLY GIRLS",
+            "flow worms",
+            "Meet & Tweet",
+            "POP UP KITCHEN",
+            "FIREWORK FESTIVAL",
+            "HAMMER TIME!",
+            "PRESIDENT BIRD",
+            "SNAKEDOWN",
+            "Octeaparty",
+        ]
 
+    @staticmethod
+    def HardSongs() -> List[str]:
+        return [
+            "Pantry Parade",
+            "Jungle Mixtape",
+            "STEADY BEARS",
+            "Sky Mixtape",
+            "MOLECANO",
+            "OCEAN MIXTAPE",
+            "Globe Trotters",
+            "FIRE MIXTAPE",
+            "FINAL MIXTAPE",
+        ]
 # Archipelago Options
 # dont you love stealing code from eav
 class BitsBops16Difficulty(Choice):
@@ -345,6 +452,7 @@ class BitsBops16Difficulty(Choice):
     - play the record of the song you want to play
     - switch the speed of the record to the desired speed
     - load into the minigame
+    Ratings above Amazing are excluded from this speed without difficult objectives
     """
     display_name = "Difficulty"
     option_Disabled = 0
@@ -363,6 +471,7 @@ class BitsBops33Difficulty(Choice):
     """ 
     Defines the maximum rating the 33 speed will ask of you
     33 speed is normal speed
+    Ratings above Amazing are excluded from this speed without difficult objectives
     """
     display_name = "Difficulty"
     option_Disabled = 0
@@ -385,6 +494,7 @@ class BitsBops45Difficulty(Choice):
     - play the record of the song you want to play
     - switch the speed of the record to the desired speed
     - load into the minigame
+    Ratings above Cool are excluded from this speed without difficult objectives
     """
     display_name = "Difficulty"
     option_Disabled = 0
@@ -407,6 +517,8 @@ class BitsBops78Difficulty(Choice):
     - play the record of the song you want to play
     - switch the speed of the record to the desired speed
     - load into the minigame
+    Keep the beat and all mixtapes are exluded from this speed without difficult objectives
+    Ratings above Cool are excluded from this speed without difficult objectives
     """
     display_name = "Difficulty"
     option_Disabled = 0
