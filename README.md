@@ -17,8 +17,9 @@ use of this is done so that the default yaml CAN be completed by everyone
 
 
 Bits & Bops (PC)
-latest update: 7-3-25
-- Added support for different speeds
+latest update: 17-4-25
+- Made Higher difficulties on higher RPM be listed as difficult
+- Made Mixtapes and keep the beat minigames on RPM 78 be listed as difficult
 
 Poition Craft
 latest update: 21-01-25
