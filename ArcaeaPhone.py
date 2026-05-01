@@ -198,6 +198,10 @@ class ArcaeaGame(Game):
         return "UNDERTALE" in self.dlc_owned
 
     @property
+    def has_dlc_UNDERTALE_Append(self) -> bool:
+        return "UNDERTALE Append" in self.dlc_owned
+
+    @property
     def has_dlc_Rotaeno(self) -> bool:
         return "Rotaeno" in self.dlc_owned
 
@@ -331,14 +335,14 @@ class ArcaeaGame(Game):
             "Dancin' on a Cat's Paw",
             "Dreamin' Attraction!!",
             "GOODTEK (Arcaea Edit)",
-            "Ignotus",
+            "Ignotus / Ignotus Afterburn",
             "Illegal Paradise",
             "Kanagawa Cyber Culvert",
             "Lost Civilization",
             "LunarOrbit -believe in the Espebranch road-",
             "NULCTRL",
             "qualia -ideaesthesia-",
-            "Red and Blue",
+            "Red and Blue / Red and Blue and Green",
             "Redraw the Colorless World",
             "Remind the Souls (Short Version)",
             "ReviXy",
@@ -351,8 +355,6 @@ class ArcaeaGame(Game):
             "Nhelv",
             "SUPERNOVA",
             "Trap Crow",
-            "Red and Blue and Green",
-            "Ignotus Afterburn",
         ]
 
     @functools.cached_property
@@ -475,7 +477,7 @@ class ArcaeaGame(Game):
             "Iconoclast",
             "SOUNDWiTCH",
             "trappola bewitching",
-            "Axium Crisis",
+            "Axium Crisis / Axium Divergence",
             "conflict",
             "Grievous Lady",
         ]
@@ -490,7 +492,7 @@ class ArcaeaGame(Game):
             "memoryfactory.lzh",
             "Solitairy Dream",
             "Essence of Twilight",
-            "PRAGMATISM",
+            "PRAGMATISM / PRAGMATISM RESSURECTION",
             "Sheriruth",
         ]
 
@@ -587,7 +589,7 @@ class ArcaeaGame(Game):
             "Antithese",
             "Black Territory",
             "Corruption",
-            "Vicious Heroism",
+            "Vicious Heroism / Vicious [ANTi] Heroism",
             "Cyaegha",
         ]
 
@@ -598,8 +600,7 @@ class ArcaeaGame(Game):
             "next to you",
             "Strongholds",
             "Memory Forest",
-            "Singularity",
-            "SINGULARITY VVVIP",
+            "Singularity / SINGULARITY VVVIP",
         ]
 
     @functools.cached_property
@@ -615,7 +616,7 @@ class ArcaeaGame(Game):
         return [
             "Blossoms",
             "Romance Wars",
-            "Genesis (Iris)",
+            "Genesis",
             "Moonheart",
             "Lethaeus",
             "corps-sans-organes",
@@ -680,7 +681,15 @@ class ArcaeaGame(Game):
             "Death By Glamour",
             "Last Goodbye",
             "Your Best Nightmare",
-            "MEGALOVANIA",
+            "MEGALOVANIA"
+        ]
+
+    @functools.cached_property
+    def songs_pack_UNDERTALE_APPEND(self) -> List[str]:
+        return [
+            "Spider Dance",
+            "Spear of Juistice",
+            "ASGORE",
         ]
 
     @functools.cached_property
@@ -817,7 +826,7 @@ class ArcaeaGame(Game):
         return [
             "Cosmo Pop Fanclub",
             "IMPACT",
-            "Genesis (Morrigan feat.Lily)",
+            "Genesis",
             "Trricksters!!",
             "Spider's Thread",
         ]
@@ -962,6 +971,8 @@ class ArcaeaGame(Game):
             songs.extend(self.songs_pack_DJMAX_Collab_2)
         if self.has_dlc_UNDERTALE:
             songs.extend(self.songs_pack_UNDERTALE)
+        if self.has_dlc_UNDERTALE_Append:
+            songs.extend(self.songs_pack_UNDERTALE_Append)
         if self.has_dlc_Rotaeno:
             songs.extend(self.songs_pack_Rotaeno)
         if self.has_dlc_Cytus_II:
@@ -1063,6 +1074,7 @@ class ArcaeaPacksOwned(OptionSet):
         "DJMAX",
         "DJMAX Collab 2",
         "UNDERTALE",
+        "UNDERTALE Append",
         "Rotaeno",
         "Cytus II",
         "Cytus II Collab 2",
