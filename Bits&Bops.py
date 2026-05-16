@@ -119,10 +119,13 @@ class BitsBopsGame(Game):
                 is_difficult=False,
                 weight= 21 * self.EXWeight33,
             ),
+        ])
+        if self.EnabledPerfect33 and not self.EnabledDiff16 and self.EnabledDiff33 and not self.EnabledDiff45 and not self.EnabledDiff78:
+            SongTemplates.extend([
                 GameObjectiveTemplate(
                     label="Get at least PERFECT in SONG",
                     data={
-                        "RESULT": (self.Scores33, 1),
+                        "SONG": (self.Songs, 1),
                     },
                 is_time_consuming=False,
                 is_difficult=True,
@@ -140,17 +143,20 @@ class BitsBopsGame(Game):
                 is_time_consuming=False,
                 is_difficult=True,
                 weight= 21 * self.Weight33 * self.EXWeight33,
-            ),
-                GameObjectiveTemplate(
-                    label="Get at least PERFECT in SONG at speed 33",
-                    data={
-                        "RESULT": (self.Scores33, 1),
-                        "SONG": (self.Songs, 1),
-                    },
-                is_time_consuming=False,
-                is_difficult=True,
-                weight= 21 * self.Weight33,
-            ),
+                ),
+            ])
+            if self.EnabledPerfect33:
+                SongTemplates.extend([
+                    GameObjectiveTemplate(
+                        label="Get at least PERFECT in SONG at speed 33",
+                        data={
+                            "RESULT": (self.Scores33, 1),
+                            "SONG": (self.Songs, 1),
+                        },
+                    is_time_consuming=False,
+                    is_difficult=True,
+                    weight= 21 * self.Weight33,
+                ),
         ])
 
         if self.EnabledDiff16:
@@ -271,8 +277,9 @@ class BitsBopsGame(Game):
         if (self.archipelago_options.Bits_Bops_16_Difficulty.value > 1):
             Scores16.extend(self.Amazing)
         return Scores16
+    @property
     def EnabledPerfect16(self) -> bool:
-        return bool(self.archipelago_options.Bits_Bops_16_Difficulty.value == 3)
+        return bool(self.archipelago_options.Bits_Bops_16_Difficulty.value >= 3)
     @property
     def Weight16(self) -> int:
         return self.archipelago_options.Bits_Bops_16_weight.value
@@ -292,8 +299,9 @@ class BitsBopsGame(Game):
         if (self.archipelago_options.Bits_Bops_33_Difficulty.value > 1):
             Scores33.extend(self.Amazing)
         return Scores33
+    @property
     def EnabledPerfect33(self) -> bool:
-        return bool(self.archipelago_options.Bits_Bops_33_Difficulty.value == 3)
+        return bool(self.archipelago_options.Bits_Bops_33_Difficulty.value >= 3)
     @property
     def Weight33(self) -> int:
         return int(self.archipelago_options.Bits_Bops_33_weight.value)
