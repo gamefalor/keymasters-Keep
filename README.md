@@ -6,10 +6,11 @@ Ap Meta Big worlds (Meta)
 latest update: 30-03-26
 
 Arcaea (AND + IOS)
-latest update: 01-05-26
-- Added Undertale APPEND
-- Added The two new world extend songs i already forgot the name of
-- Changed behaviour of new named BYDs to instead use a slash to denote you can play either to avoid really difficult challenges you cant just switch to a lower difficulty from
+latest update: 31-05-26
+- Added c.s.q.n
+- Added Altersist
+- Added Cosmygyral
+- Added flexidefine
 
 remember to use the Arcaea.txt if you wish to not have to test gen every time because it gives the stuff you have to copy paste
 
