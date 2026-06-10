@@ -21,6 +21,10 @@ Bits & Bops (PC)
 latest update: 16-5-26
 - fixed issue where speed 33 and 16 perfects would appear no matter what
 
-Poition Craft
+Potion Craft
 latest update: 21-01-26
 Not recommended to play, will be updating it to make it slightly better
+
+White knuckle
+latest update: 10-06-26
+- release
