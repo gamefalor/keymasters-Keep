@@ -106,7 +106,7 @@ class WhiteKnuckleMinHeight(Range):
     """
     range_start = 10
     range_end = 199
-    default = 250
+    default = 25
 class WhiteKnuckleMaxHeight(Range):
     """
     ^ same as above
@@ -114,7 +114,7 @@ class WhiteKnuckleMaxHeight(Range):
     """
     range_start = 11
     range_end = 200
-    default = 500
+    default = 50
 
 class WhiteKnuckleAnyMapFrequency(Range):
     """
