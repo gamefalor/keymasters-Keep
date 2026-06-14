@@ -14,6 +14,10 @@ class WhiteKnuckleArchipelagoOptions:
     ChosenAreas : WhiteKnuckleAreasEnabled
     MinClimbHeight : WhiteKnuckleMinHeight 
     MaxClimbHeight : WhiteKnuckleMaxHeight
+    MinRoaches : WhiteKnuckleMinRoaches 
+    MaxRoaches : WhiteKnuckleMaxRoaches
+    MinScrap : WhiteKnuckleMinScrapCount
+    MaxScrap : WhiteKnuckleMaxScrapCount
     AnyMapFrequency : WhiteKnuckleAnyMapFrequency
 
 class WhiteKnuckle(Game):
@@ -34,12 +38,50 @@ class WhiteKnuckle(Game):
                 },
                 is_time_consuming=False,
                 is_difficult=False,
-                weight=10,
+                weight=20,
             ),
             GameObjectiveTemplate(
                 label="Climb METERS0 meters in Any map",
                 data={
                     "METERS": (self.ClimbingHeights, 1),
+                },
+                is_time_consuming=False,
+                is_difficult=False,
+                weight=2 * self.archipelago_options.AnyMapFrequency.value,
+            ),
+            GameObjectiveTemplate(
+                label="Deposit ROACHES roaches in INFINITEMAP",
+                data={
+                    "ROACHES": (self.RoachAmounts, 1),
+                    "INFINITEMAP": (self.ChosenInfiniteMaps, 1),
+                },
+                is_time_consuming=False,
+                is_difficult=False,
+                weight=10,
+            ),
+            GameObjectiveTemplate(
+                label="Deposit ROACHES roaches in Any map",
+                data={
+                    "ROACHES": (self.RoachAmounts, 1),
+                },
+                is_time_consuming=False,
+                is_difficult=False,
+                weight=self.archipelago_options.AnyMapFrequency.value,
+            ),
+            GameObjectiveTemplate(
+                label="Scrap ROACHES worth of non-roach items roaches in INFINITEMAP",
+                data={
+                    "ROACHES": (self.ScrapAmounts, 1),
+                    "INFINITEMAP": (self.ChosenInfiniteMaps, 1),
+                },
+                is_time_consuming=False,
+                is_difficult=False,
+                weight=10,
+            ),
+            GameObjectiveTemplate(
+                label="Scrap ROACHES worth of non-roach items roaches in Any map",
+                data={
+                    "ROACHES": (self.ScrapAmounts, 1),
                 },
                 is_time_consuming=False,
                 is_difficult=False,
@@ -59,11 +101,23 @@ class WhiteKnuckle(Game):
     @property
     def ClimbingHeights(self) -> range:
         if self.TrueMaxClimbHeight < self.TrueMinClimbHeight:
-            raise OptionError("White Knuckle: Minimum climbing distance climbing is higher tham maximum climbing distance")
+            raise OptionError("White Knuckle: Minimum climbing distance is higher tham maximum climbing distance")
         ClimbingHeights = range(self.archipelago_options.MinClimbHeight.value, self.archipelago_options.MaxClimbHeight.value + 1)
-        for Num in ClimbingHeights:
-            Num * 50
         return ClimbingHeights
+
+    @property
+    def RoachAmounts(self) -> range:
+        if self.TrueMaxClimbHeight < self.TrueMinClimbHeight:
+            raise OptionError("White Knuckle: Minimum Roaches deposited is higher tham maximum Roaches deposited")
+        RoachAmounts = range(self.archipelago_options.MinRoaches.value, self.archipelago_options.MaxRoaches.value + 1)
+        return RoachAmounts
+
+    @property
+    def ScrapAmounts(self) -> range:
+        if self.TrueMaxClimbHeight < self.TrueMinClimbHeight:
+            raise OptionError("White Knuckle: Minimum items scrapped is higher tham maximum items Scrapped")
+        ScrapAmounts = range(self.archipelago_options.MinScrap.value, self.archipelago_options.MaxScrap.value + 1)
+        return ScrapAmounts
 
     @property
     def ChosenInfiniteMaps(self) -> List[str]:
@@ -115,13 +169,46 @@ class WhiteKnuckleMaxHeight(Range):
     range_start = 11
     range_end = 200
     default = 50
+    
+class WhiteKnuckleMinRoaches(Range):
+    """
+    The minimum Roaches you will be asked to deposit in 1 session
+    """
+    range_start = 1
+    range_end = 99
+    default = 10
+class WhiteKnuckleMaxRoaches(Range):
+    """
+    ^ same as above
+    except the maximum
+    """
+    range_start = 2
+    range_end = 100
+    default = 20
+    
+class WhiteKnuckleMinScrapCount(Range):
+    """
+    The minimum Roaches worth of items you will be asked to scrap in 1 session
+    recommended to not count the golden nugget for these challenges
+    """
+    range_start = 1
+    range_end = 99
+    default = 5
+class WhiteKnuckleMaxScrapCount(Range):
+    """
+    ^ same as above
+    except the maximum
+    """
+    range_start = 2
+    range_end = 100
+    default = 10
 
 class WhiteKnuckleAnyMapFrequency(Range):
     """
     specifies how often the challenge doesnt specify the map
     useful if you want to do long runs
-    10 would be the same frequency as not specifying the map
+    multiplies the weight for the challenge by this amount /10
     """
     range_start = 0
     range_end = 100
-    default = 40
+    default = 20
