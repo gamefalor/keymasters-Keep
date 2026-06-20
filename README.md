@@ -26,6 +26,5 @@ latest update: 21-01-26
 Not recommended to play, will be updating it to make it slightly better
 
 White knuckle
-latest update: 14-06-26
-- added roach & scrap goals
-- changed AnyMap default frequency to 20
+latest update: 20-06-26
+- Removed Chimney from scrap goals
