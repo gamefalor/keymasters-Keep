@@ -72,7 +72,7 @@ class WhiteKnuckle(Game):
                 label="Scrap ROACHES worth of non-roach items roaches in INFINITEMAP",
                 data={
                     "ROACHES": (self.ScrapAmounts, 1),
-                    "INFINITEMAP": (self.ChosenInfiniteMaps, 1),
+                    "INFINITEMAP": (self.Maps_NoChimney, 1),
                 },
                 is_time_consuming=False,
                 is_difficult=False,
@@ -122,6 +122,15 @@ class WhiteKnuckle(Game):
     @property
     def ChosenInfiniteMaps(self) -> List[str]:
         return sorted(self.archipelago_options.ChosenAreas.value)
+    
+    @property
+    def Maps_NoChimney(self) -> List[str]:
+        Maps: List[str] = self.ChosenInfiniteMaps[:]
+
+        if "Chimney" in Maps:
+            Maps.remove("Chimney")
+
+        return Maps
 
 # Archipelago Options
 class WhiteKnuckleAreasEnabled(OptionSet):
