@@ -182,24 +182,12 @@ class ArcaeaGame(Game):
         return "MEGAREX" in self.dlc_owned
 
     @property
-    def has_dlc_Arcaea_Next_Stage(self) -> bool:
-        return "Arcaea Next Stage" in self.dlc_owned
-
-    @property
     def has_dlc_DJMAX(self) -> bool:
         return "DJMAX" in self.dlc_owned
 
     @property
     def has_dlc_DJMAX_Collab_2(self) -> bool:
         return "DJMAX Collab 2" in self.dlc_owned
-
-    @property
-    def has_dlc_UNDERTALE(self) -> bool:
-        return "UNDERTALE" in self.dlc_owned
-
-    @property
-    def has_dlc_UNDERTALE_Append(self) -> bool:
-        return "UNDERTALE Append" in self.dlc_owned
 
     @property
     def has_dlc_Rotaeno(self) -> bool:
@@ -288,6 +276,22 @@ class ArcaeaGame(Game):
     @property
     def has_dlc_Dynamix(self) -> bool:
         return "Dynamix" in self.dlc_owned
+    
+    @property
+    def has_dlc_Virtual_Singers(self) -> bool:
+        return "Virtual Singers" in self.dlc_owned
+
+    @property
+    def has_dlc_Arcaea_Next_Stage(self) -> bool:
+        return "Arcaea Next Stage" in self.dlc_owned
+
+    @property
+    def has_dlc_UNDERTALE(self) -> bool:
+        return "UNDERTALE" in self.dlc_owned
+
+    @property
+    def has_dlc_UNDERTALE_Append(self) -> bool:
+        return "UNDERTALE Append" in self.dlc_owned
 
     @functools.cached_property
     def songs_pack_Arcaea(self) -> List[str]:
@@ -616,7 +620,7 @@ class ArcaeaGame(Game):
         return [
             "Blossoms",
             "Romance Wars",
-            "Genesis (Iris)",
+            "Genesis",
             "Moonheart",
             "Lethaeus",
             "corps-sans-organes",
@@ -644,17 +648,6 @@ class ArcaeaGame(Game):
         ]
 
     @functools.cached_property
-    def songs_pack_Arcaea_Next_Stage(self) -> List[str]:
-        return [
-            "INFINITE DIMENSION",
-            "INCARNATOR",
-            "MARENYX",
-            "Zephyrlasting",
-            "AZALEA",
-            "CODE : Oblivion",
-        ]
-
-    @functools.cached_property
     def songs_pack_DJMAX(self) -> List[str]:
         return [
             "Ladymade Star",
@@ -672,24 +665,6 @@ class ArcaeaGame(Game):
             "Syriana",
             "Liar",
             "We're All Gonna Die",
-        ]
-
-    @functools.cached_property
-    def songs_pack_UNDERTALE(self) -> List[str]:
-        return [
-            "Heartache",
-            "Death By Glamour",
-            "Last Goodbye",
-            "Your Best Nightmare",
-            "MEGALOVANIA"
-        ]
-
-    @functools.cached_property
-    def songs_pack_UNDERTALE_APPEND(self) -> List[str]:
-        return [
-            "Spider Dance",
-            "Spear of Juistice",
-            "ASGORE",
         ]
 
     @functools.cached_property
@@ -826,7 +801,7 @@ class ArcaeaGame(Game):
         return [
             "Cosmo Pop Fanclub",
             "IMPACT",
-            "Genesis (Morrigan feat.Lily)",
+            "Genesis",
             "Trricksters!!",
             "Spider's Thread",
         ]
@@ -897,6 +872,45 @@ class ArcaeaGame(Game):
             "Oracle",
             "aterlbus",
         ]
+    
+    @functools.cached_property
+    def songs_pack_Virtual_Singers(self) -> List[str]:
+        return [
+            "God-ish",
+            "Lavie",
+            "Love me, Love me, Love me",
+            "Override",
+            "Telepathy",
+        ]
+    
+    @functools.cached_property
+    def songs_pack_Arcaea_Next_Stage(self) -> List[str]:
+        return [
+            "INFINITE DIMENSION",
+            "INCARNATOR",
+            "MARENYX",
+            "Zephyrlasting",
+            "AZALEA",
+            "CODE : Oblivion",
+        ]
+    
+    @functools.cached_property
+    def songs_pack_UNDERTALE(self) -> List[str]:
+        return [
+            "Heartache",
+            "Death By Glamour",
+            "Last Goodbye",
+            "Your Best Nightmare",
+            "MEGALOVANIA"
+        ]
+
+    @functools.cached_property
+    def songs_pack_UNDERTALE_APPEND(self) -> List[str]:
+        return [
+            "Spider Dance",
+            "Spear of Juistice",
+            "ASGORE",
+        ]
 
     def songs(self) -> List[str]:
         songs = []
@@ -907,6 +921,7 @@ class ArcaeaGame(Game):
         
         if self.has_dlc_Arcaea:
             songs.extend(self.songs_pack_Arcaea)
+
         if self.has_dlc_Liminal_Eclipse:
             songs.extend(self.songs_pack_Liminal_Eclipse)
         if self.has_dlc_Lucent_Historia:
@@ -919,6 +934,7 @@ class ArcaeaGame(Game):
             songs.extend(self.songs_pack_Lasting_Eden_Chapter_2)
         if self.has_dlc_Shifting_Veil:
             songs.extend(self.songs_pack_Shifting_Veil)
+
         if self.has_dlc_Silent_Awnser:
             songs.extend(self.songs_pack_Silent_Awnser)
         if self.has_dlc_Final_Verdict:
@@ -933,6 +949,7 @@ class ArcaeaGame(Game):
             songs.extend(self.songs_pack_Vicious_Labyrinth)
         if self.has_dlc_Eternal_Core:
             songs.extend(self.songs_pack_Eternal_Core)
+
         if self.has_dlc_Extant_Anima:
             songs.extend(self.songs_pack_Extant_Anima)
         if self.has_dlc_Chapter_Experientia:
@@ -961,18 +978,13 @@ class ArcaeaGame(Game):
             songs.extend(self.songs_pack_Ambivalent_Vision)
         if self.has_dlc_Crimson_Solace:
             songs.extend(self.songs_pack_Crimson_Solace)
+
         if self.has_dlc_MEGAREX:
             songs.extend(self.songs_pack_MEGAREX)
-        if self.has_dlc_Arcaea_Next_Stage:
-            songs.extend(self.songs_pack_Arcaea_Next_Stage)
         if self.has_dlc_DJMAX:
             songs.extend(self.songs_pack_DJMAX)
         if self.has_dlc_DJMAX_Collab_2:
             songs.extend(self.songs_pack_DJMAX_Collab_2)
-        if self.has_dlc_UNDERTALE:
-            songs.extend(self.songs_pack_UNDERTALE)
-        if self.has_dlc_UNDERTALE_Append:
-            songs.extend(self.songs_pack_UNDERTALE_Append)
         if self.has_dlc_Rotaeno:
             songs.extend(self.songs_pack_Rotaeno)
         if self.has_dlc_Cytus_II:
@@ -1017,6 +1029,15 @@ class ArcaeaGame(Game):
             songs.extend(self.songs_pack_Lanota_Collab_2)
         if self.has_dlc_Dynamix:
             songs.extend(self.songs_pack_Dynamix)
+            
+        if self.has_dlc_Virtual_Singers:
+            songs.extend(self.songs_pack_Virtual_Singers)
+        if self.has_dlc_Arcaea_Next_Stage:
+            songs.extend(self.songs_pack_Arcaea_Next_Stage)
+        if self.has_dlc_UNDERTALE:
+            songs.extend(self.songs_pack_UNDERTALE)
+        if self.has_dlc_UNDERTALE_Append:
+            songs.extend(self.songs_pack_UNDERTALE_Append)
 
         return sorted(songs)
     
@@ -1070,11 +1091,8 @@ class ArcaeaPacksOwned(OptionSet):
         "Ambivalent Vision",
         "Crimson Solace",
         "MEGAREX",
-        "Arcaea Next Stage",
         "DJMAX",
         "DJMAX Collab 2",
-        "UNDERTALE",
-        "UNDERTALE Append",
         "Rotaeno",
         "Cytus II",
         "Cytus II Collab 2",
@@ -1097,6 +1115,10 @@ class ArcaeaPacksOwned(OptionSet):
         "Lanota",
         "Lanota Collab 2",
         "Dynamix",
+        "Virtual Singers"
+        "Arcaea Next Stage",
+        "UNDERTALE",
+        "UNDERTALE Append",
     ]
 
     default = [
