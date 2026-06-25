@@ -6,11 +6,10 @@ Ap Meta Big worlds (Meta)
 latest update: 30-03-26
 
 Arcaea (AND + IOS)
-latest update: 31-05-26
-- Added c.s.q.n
-- Added Altersist
-- Added Cosmygyral
-- Added flexidefine
+latest update: 25-06-26
+- Registered pack: Virtual Singers (5 songs)
+- Added song: Sucromania
+- Added a few extra whitespaces to make future edits easier
 
 remember to use the Arcaea.txt if you wish to not have to test gen every time because it gives the stuff you have to copy paste
 
