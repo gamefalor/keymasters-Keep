@@ -1115,7 +1115,7 @@ class ArcaeaPacksOwned(OptionSet):
         "Lanota",
         "Lanota Collab 2",
         "Dynamix",
-        "Virtual Singers"
+        "Virtual Singers",
         "Arcaea Next Stage",
         "UNDERTALE",
         "UNDERTALE Append",
