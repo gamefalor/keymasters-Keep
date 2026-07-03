@@ -156,6 +156,7 @@ class WhiteKnuckleAreasEnabled(OptionSet):
         "Endless Pipeworks",
         "Endless Habitation",
         "Endless Abyss",
+        "Endless Nest",
         "Endless Underworks",
         "Endless Substructure",
         "Endless Superstructure",
