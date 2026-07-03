@@ -25,5 +25,5 @@ latest update: 21-01-26
 Not recommended to play, will be updating it to make it slightly better
 
 White knuckle
-latest update: 20-06-26
-- Removed Chimney from scrap goals
+latest update: 03-07-2026
+- Added Nest
