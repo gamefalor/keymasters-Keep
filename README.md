@@ -6,10 +6,8 @@ Ap Meta Big worlds (Meta)
 latest update: 30-03-26
 
 Arcaea (AND + IOS)
-latest update: 25-06-26
-- Registered pack: Virtual Singers (5 songs)
-- Added song: Sucromania
-- Added a few extra whitespaces to make future edits easier
+latest update: 1-08-26
+- registered songs: 'Acid God', 'chronologia', 'synthesis.' to mem archive
 
 remember to use the Arcaea.txt if you wish to not have to test gen every time because it gives the stuff you have to copy paste
 
