@@ -1079,6 +1079,7 @@ class ArcaeaPacksOwned(OptionSet):
     display_name = "Arcaea Packs Owned"
     valid_keys = [
         "Arcaea",
+        "Divine Oblivion",
         "Liminal Eclipse",
         "Lucent Historia",
         "Absolute Nihil",
