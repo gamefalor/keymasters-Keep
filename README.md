@@ -1,5 +1,8 @@
 Feel Free to Ping me about any bugs or other things that shouldnt happen
 
+no ai has been used in the making of this kmk
+no PR that obvious use of ai will be accepted
+
 Ap Meta Big worlds (Meta)
 - !!this kmk implementation expects an entire keep to be played at once
 - !!this kmk implementation will NOT work in medley
