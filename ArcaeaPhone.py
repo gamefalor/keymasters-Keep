@@ -72,7 +72,7 @@ class ArcaeaGame(Game):
     @property
     def has_dlc_Divine_Oblivion(self) -> bool:
         return "Divine Oblivion" in self.dlc_owned
-    
+
     @property
     def has_dlc_Liminal_Eclipse(self) -> bool:
         return "Liminal Eclipse" in self.dlc_owned
@@ -296,7 +296,7 @@ class ArcaeaGame(Game):
     @property
     def has_dlc_UNDERTALE_Append(self) -> bool:
         return "UNDERTALE Append" in self.dlc_owned
-    
+
     @functools.cached_property
     def songs_pack_Arcaea(self) -> List[str]:
         return [
@@ -366,15 +366,15 @@ class ArcaeaGame(Game):
         ]
 
     @functools.cached_property
-    def songs_pack_Divine_Oblivion(self) -> List[str];
+    def songs_pack_Divine_Oblivion(self) -> List[str]:
         return [
-            "Balor"
-            "Cataclysm Cry"
-            "DREAD AREA"
-            "Riven Pilgrimage"
+            "Balor",
+            "Cataclysm Cry",
+            "DREAD AREA",
+            "Riven Pilgrimage",
             "un"
         ]
-    @functools.cached_property
+
     def songs_pack_Liminal_Eclipse(self) -> List[str]:
         return [
             "Vainspire",
@@ -935,6 +935,8 @@ class ArcaeaGame(Game):
         if self.has_dlc_Arcaea:
             songs.extend(self.songs_pack_Arcaea)
 
+        if self.has_dlc_Divine_Oblivion:
+            songs.extend(self.songs_pack_Divine_Oblivion)
         if self.has_dlc_Liminal_Eclipse:
             songs.extend(self.songs_pack_Liminal_Eclipse)
         if self.has_dlc_Lucent_Historia:
@@ -963,9 +965,6 @@ class ArcaeaGame(Game):
         if self.has_dlc_Eternal_Core:
             songs.extend(self.songs_pack_Eternal_Core)
 
-        
-        if self.has_dlc_Divine_Oblivion:
-            songs.extend(self.songs_pack_Divine_Oblivion)
         if self.has_dlc_Extant_Anima:
             songs.extend(self.songs_pack_Extant_Anima)
         if self.has_dlc_Chapter_Experientia:
@@ -1079,7 +1078,7 @@ class ArcaeaPacksOwned(OptionSet):
     display_name = "Arcaea Packs Owned"
     valid_keys = [
         "Arcaea",
-        "Divine Oblivion",
+        "Divine Oblivion"
         "Liminal Eclipse",
         "Lucent Historia",
         "Absolute Nihil",
