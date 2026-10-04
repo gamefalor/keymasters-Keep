@@ -9,9 +9,9 @@ Ap Meta Big worlds (Meta)
 latest update: 30-03-26
 
 Arcaea (AND + IOS)
-latest update: 1-08-26
-- registered songs: 'Acid God', 'chronologia', 'synthesis.' to mem archive
-
+latest update: 4-10-26
+- Added Divine Oblivion to packs
+- Added Château de cartes to mem archive
 remember to use the Arcaea.txt if you wish to not have to test gen every time because it gives the stuff you have to copy paste
 
 use of this is done so that the default yaml CAN be completed by everyone
