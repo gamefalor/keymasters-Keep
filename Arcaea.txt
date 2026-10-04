@@ -12,7 +12,7 @@ Valid Packs:
     'Arcaea'
 
   Main Story CH.2
-    'Liminal Eclipse', 'Lucent Historia', 'Absolute Nihil', 'Lasting Eden', 'Lasting Eden Chapter 2', 'Shifting Veil', "Divine Oblivion"
+    "Divine Oblivion", 'Liminal Eclipse', 'Lucent Historia', 'Absolute Nihil', 'Lasting Eden', 'Lasting Eden Chapter 2', 'Shifting Veil', "Divine Oblivion"
 
   Main Story CH.1
     'Silent Awnser', 'Final Verdict', 'Black Fate', 'Adverse Prelude', 'Luminous Sky', 'Vicious Labyrinth', 'Eternal Core'
