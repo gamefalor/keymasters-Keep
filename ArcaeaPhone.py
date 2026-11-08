@@ -182,6 +182,10 @@ class ArcaeaGame(Game):
         return "Crimson Solace" in self.dlc_owned
 
     @property
+    def has_dlc_Diverse_System(self) -> bool:
+        return "Diverse System" in self.dlc_owned
+
+    @property
     def has_dlc_MEGAREX(self) -> bool:
         return "MEGAREX" in self.dlc_owned
 
@@ -651,6 +655,16 @@ class ArcaeaGame(Game):
         ]
 
     @functools.cached_property
+    def songs_pack_Diverse_System(self) -> List[str]:
+        return [
+            "Ether Drive",
+            "Fatality",
+            "Parallax",
+            "Ran",
+            "Schra Go (Uchina Time)"
+        ]
+
+    @functools.cached_property
     def songs_pack_MEGAREX(self) -> List[str]:
         return [
             "CHAIN2NITE",
@@ -994,6 +1008,8 @@ class ArcaeaGame(Game):
         if self.has_dlc_Crimson_Solace:
             songs.extend(self.songs_pack_Crimson_Solace)
 
+        if self.has_dlc_Diverse_System:
+            songs.extend(self.songs_pack_Diverse_System)
         if self.has_dlc_MEGAREX:
             songs.extend(self.songs_pack_MEGAREX)
         if self.has_dlc_DJMAX:
@@ -1106,6 +1122,7 @@ class ArcaeaPacksOwned(OptionSet):
         "Shared Time",
         "Ambivalent Vision",
         "Crimson Solace",
+        "Diverse System",
         "MEGAREX",
         "DJMAX",
         "DJMAX Collab 2",
